@@ -10,8 +10,10 @@
   become: yes
   roles:
     - git
-    - ruby
+    - ruby # required by legacy install scripts
+    - python # required by commitment device scripts
     - basic_dev_tools
+    - backup_restore_gem
 
 - name: all_my_software
   hosts: all
