@@ -1,0 +1,46 @@
+# https://docs.ansible.com/ansible/latest/modules/apt_key_module.html
+# https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
+---
+- name: Add an Apt signing key, uses whichever key is at the URL
+  apt_key:
+    url: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+    state: present
+- name: "Add repo"
+  apt_repository:
+    repo: 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main'
+- name: "Install codium"
+  apt:
+    name: codium
+
+# this ansible code replaces following script
+# wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
+# echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | sudo tee --append /etc/apt/sources.list
+# sudo apt-get -qq update
+# sudo apt-get -qq install -y codium > /dev/null # in case of changing this - remember to modify git config
+
+# https://askubuntu.com/questions/616075/how-do-i-install-visual-studio-code/895790#895790
+# broken - later 
+# starts to complain about duplicated sources
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
+# sudo add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+# sudo apt-get -qq update
+# sudo apt -y install code
+
+# snap - separate package manager, I prefer to avoid this
+#sudo apt-get -qq install snapd -y > /dev/null
+#sudo snap install code --classic > /dev/null
+# to upgrade:
+# sudo snap refresh code
+
+# from https://code.visualstudio.com/docs/setup/linux
+# (untested)
+#curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+#sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+#sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+#sudo apt-get -qq install -y apt-transport-https  > /dev/null
+#sudo apt-get -qq update
+#sudo apt-get -qq install -y code  > /dev/null # or code-insiders
+
+# version with telemetry and other obvious malware purged - codium
+# https://github.com/VSCodium/vscodium
+# package at https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo

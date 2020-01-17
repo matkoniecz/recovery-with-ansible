@@ -14,6 +14,22 @@
     - python # required by commitment device scripts
     - basic_dev_tools
     - backup_restore_gem
+    # decent text editor that works well out of the box
+    # without endless configurations
+    # must have syntax code higligting
+    # preferably showing automated docs info for libraries (in Python, Ruby etc)
+    # gedit is worse than sublime text
+    # sublime text requires manual configuration to work well
+    # https://www.sublimetext.com/docs/3/linux_repositories.html
+    # kate fails on long lines
+    # - https://bugs.kde.org/show_bug.cgi?id=387910
+    # - https://stackoverflow.com/questions/13496654/kate-text-editor-cannot-handle-lines-longer-than-1024
+    # kate is also not showing line numbers by default (!)
+    # - https://superuser.com/q/918189/376651
+    # geany geany-plugin-addons - it is really flustrating
+    # visual studio code works OK but...
+    # codium is the same, without telemetry and similar unwanted stuff
+    - codium
 
 - name: all_my_software
   hosts: all
