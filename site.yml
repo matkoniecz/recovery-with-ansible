@@ -20,3 +20,4 @@
   become: yes
   roles:
     - keepass
+    - bloat_removal

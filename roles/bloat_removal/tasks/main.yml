@@ -1,0 +1,54 @@
+---
+- name: remove raspbian bloat
+  apt:
+    name="{{ packages }}"
+    state=absent
+  vars:
+    packages:
+      - wolfram-engine
+      - scratch
+      - minecraft-pi
+      - python-minecraftpi 
+      - python3-minecraftpi
+      - sonic-pi
+      - dillo # web browser, supports only plain HTML/XHTML (with CSS rendering) and images over HTTP; scripting is ignored entirely
+      - penguinspuzzle
+# removals of default program may be undone by sudo apt-get -qq install lubuntu-desktop
+- name: remove lubuntu 14 bloat
+  apt:
+    name:
+      - leafpad # unwanted text editors
+      - gedit # unwanted text editors
+      - xpad
+      - gnome-mplayer # though for me it seems that just ratings are missing - and maybe playlist persistence
+      - abiword
+      - gnumeric
+      - audacious
+      - transmission # bit-torrent client
+      - transmission-gtk # bit-torrent client
+      - transmission-cli # bit-torrent client
+      - transmission-common # bit-torrent client
+    state: absent
+- name: remove lubuntu 16 bloat
+  apt:
+    name:
+      - pidgin
+      - pidgin-data
+      - sylpheed
+    state: absent
+- name: remove lubuntu 18 bloat
+  apt:
+    name:
+      - kdeconnect
+      - kmail
+    state: absent
+- name: remove lubuntu 19 bloat
+  apt:
+    name:
+      - kdeconnect
+      - muon
+      - knotes
+      - vim
+      - qtpass
+      - 2048-qt
+    state: absent
