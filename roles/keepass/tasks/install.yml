@@ -1,0 +1,5 @@
+---
+- name: Install Keepass
+  apt:
+   name:
+     - keepass2
