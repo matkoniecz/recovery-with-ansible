@@ -1,6 +1,7 @@
 #!/usr/bin/bash
-# from https://github.com/jkramarz/recovery/blob/master/run.sh
-# from https://docs.ansible.com/ansible/latest/modules/apt_module.html
+# https://github.com/jkramarz/recovery/blob/master/run.sh
+# https://docs.ansible.com/ansible/latest/modules/apt_module.html
+# https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 set -ev
 
 sudo apt-get install ansible
