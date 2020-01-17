@@ -1,0 +1,6 @@
+# TODO missing
+# if [ "$(arch)" = "armv7l" ]; then
+# echo "skipping adding ppa:git-core with latest git on ARM architecture (for example on raspberry pi)"
+- name: Create symbolic link 
+  apt_repository:
+    repo: "ppa:git-core/ppa"

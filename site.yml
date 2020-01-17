@@ -5,3 +5,4 @@
   roles:
     - ansible
     - keepass
+    - git
