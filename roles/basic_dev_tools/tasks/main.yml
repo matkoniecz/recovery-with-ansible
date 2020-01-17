@@ -1,0 +1,9 @@
+---
+- name: Install packages
+  apt:
+   name:
+     - unzip
+     - curl
+     - build-essential
+     - software-properties-common
+     - bash-completion  #supports autocompletion on tab in bash

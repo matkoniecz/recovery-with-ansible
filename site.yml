@@ -4,5 +4,17 @@
   become: yes
   roles:
     - ansible
-    - keepass
+
+- name: basic
+  hosts: all
+  become: yes
+  roles:
     - git
+    - ruby
+    - basic_dev_tools
+
+- name: all_my_software
+  hosts: all
+  become: yes
+  roles:
+    - keepass
