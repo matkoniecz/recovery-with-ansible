@@ -3,6 +3,5 @@
   apt:
    name:
      - git
-     - git-core
      - git-gui 
      - meld # meld is for diffing
