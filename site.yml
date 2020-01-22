@@ -37,6 +37,7 @@
   become: yes
   roles:
     - keepass
+    - newline_tools
 
 - name: low_priority_changes
   hosts: all

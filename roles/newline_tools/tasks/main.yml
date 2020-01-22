@@ -1,0 +1,8 @@
+---
+- name: Install software to play midi files # https://sfxpt.wordpress.com/2015/02/02/how-to-play-midi-files-under-ubuntu-linux/
+
+  apt:
+   name:
+     - tofrodos # install todos fromdos commands http://superuser.com/questions/52044/convert-crlfs-to-line-feeds-on-linux/52140#52140
+     - dos2unix # install dos2unix unix2dos commands
+   force_apt_get: yes
