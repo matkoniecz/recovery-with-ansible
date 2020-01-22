@@ -5,3 +5,4 @@
      - git
      - git-gui 
      - meld # meld is for diffing
+   force_apt_get: yes

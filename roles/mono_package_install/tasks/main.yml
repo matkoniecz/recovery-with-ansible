@@ -3,4 +3,5 @@
   apt:
    name:
      - mono-complete  # for keepass, maperitive...
+   force_apt_get: yes
 

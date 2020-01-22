@@ -1,8 +1,9 @@
 ---
 - name: remove raspbian bloat
   apt:
-    name="{{ packages }}"
-    state=absent
+    name: "{{ packages }}"
+    state: absent
+    force_apt_get: yes
   vars:
     packages:
       - wolfram-engine
@@ -29,6 +30,7 @@
       - transmission-cli # bit-torrent client
       - transmission-common # bit-torrent client
     state: absent
+    force_apt_get: yes
 - name: remove lubuntu 16 bloat
   apt:
     name:
@@ -36,12 +38,14 @@
       - pidgin-data
       - sylpheed
     state: absent
+    force_apt_get: yes
 - name: remove lubuntu 18 bloat
   apt:
     name:
       - kdeconnect
       - kmail
     state: absent
+    force_apt_get: yes
 - name: remove lubuntu 19 bloat
   apt:
     name:
@@ -52,3 +56,4 @@
       - qtpass
       - 2048-qt
     state: absent
+    force_apt_get: yes

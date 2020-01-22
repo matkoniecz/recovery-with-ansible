@@ -4,3 +4,4 @@
    name:
      - ruby
      - ruby-dev # required by many gems
+   force_apt_get: yes

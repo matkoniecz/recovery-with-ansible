@@ -9,3 +9,4 @@
      - bash-completion  #supports autocompletion on tab in bash
      - autoconf
      - valgrind
+   force_apt_get: yes

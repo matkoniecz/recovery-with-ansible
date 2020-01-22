@@ -11,6 +11,7 @@
 - name: "Install codium"
   apt:
     name: codium
+    force_apt_get: yes
 
 # this ansible code replaces following script
 # wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
