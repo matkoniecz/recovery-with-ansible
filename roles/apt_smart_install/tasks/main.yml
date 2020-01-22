@@ -1,0 +1,5 @@
+---
+- name: Install apt-smart
+  pip:
+    name: apt-smart
+    state: latest

@@ -4,6 +4,7 @@
   become: yes
   roles:
     - ansible
+    - select_fast_apt_mirror
 
 - name: basic
   hosts: all

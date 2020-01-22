@@ -1,0 +1,4 @@
+---
+  dependencies:
+    - role: python
+    - role: apt_smart_install

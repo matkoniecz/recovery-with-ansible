@@ -1,0 +1,3 @@
+---
+- name: Run apt-smart to select fastest mirror, as official mirror in Poland is slow and buggy
+  command: /usr/local/bin//apt-smart -a
