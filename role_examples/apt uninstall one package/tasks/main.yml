@@ -1,0 +1,7 @@
+---
+- name: Install Ansible
+  apt:
+   name:
+     - ansible
+   state: absent
+   force_apt_get: yes

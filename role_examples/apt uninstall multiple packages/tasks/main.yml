@@ -1,0 +1,8 @@
+---
+- name: Install Ruby
+  apt:
+   name:
+     - ruby
+     - ruby-dev # required by many gems
+   state: absent
+   force_apt_get: yes
