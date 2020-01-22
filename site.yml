@@ -32,7 +32,7 @@
     # codium is the same, without telemetry and similar unwanted stuff
     - codium
 
-- name: all_my_software
+- name: my_software
   hosts: all
   become: yes
   roles:
