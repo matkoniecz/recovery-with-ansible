@@ -1,0 +1,6 @@
+---
+- name: Install Snap package manager
+  apt:
+   name:
+     - snapd
+   force_apt_get: yes

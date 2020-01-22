@@ -38,6 +38,8 @@
   roles:
     - keepass
     - newline_tools
+    - android-studio
+    - telegram
 
 - name: low_priority_changes
   hosts: all

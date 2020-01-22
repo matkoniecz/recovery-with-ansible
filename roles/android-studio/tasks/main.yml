@@ -1,0 +1,14 @@
+---
+- name: Install packages needed by Android Studio
+  apt:
+   name:
+     - lib32z1 # http://askubuntu.com/questions/644667/gradle-executing-tasks-runs-forever
+     - lib32stdc++6  # https://developer.android.com/studio/install.html
+     # following are needed according to https://developer.android.com/studio/install.html but unavailable as of Ubuntu 19, appears to be not needed
+     # libc6:i386 libncurses5:i386 libstdc++6:i386 libbz2-1.0:i386
+   force_apt_get: yes
+- name: Install Android Studio
+  snap:
+    name:
+      - android-studio
+    classic: yes
