@@ -4,6 +4,6 @@
 # https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 set -ev
 
-sudo apt-get install ansible
+sudo apt-get install ansible -y
 echo "localhost ansible_connection=local user=$USER" > inventory
 ansible-playbook -v -i inventory site.yml
