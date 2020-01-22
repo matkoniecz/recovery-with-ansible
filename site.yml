@@ -37,4 +37,9 @@
   become: yes
   roles:
     - keepass
+
+- name: low_priority_changes
+  hosts: all
+  become: yes
+  roles:
     - bloat_removal
