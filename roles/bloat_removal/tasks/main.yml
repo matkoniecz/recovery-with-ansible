@@ -55,5 +55,6 @@
       - vim
       - qtpass
       - 2048-qt
+      - trojita # maybe better than claws-mail? looks very similar
     state: absent
     force_apt_get: yes
