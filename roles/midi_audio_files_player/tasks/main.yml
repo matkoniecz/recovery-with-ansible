@@ -1,0 +1,9 @@
+---
+- name: Install software to play midi files # https://sfxpt.wordpress.com/2015/02/02/how-to-play-midi-files-under-ubuntu-linux/
+
+  apt:
+   name:
+     - freepats
+     - timidity
+     - timidity-interfaces-extra
+   force_apt_get: yes

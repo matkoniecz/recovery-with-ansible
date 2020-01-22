@@ -43,6 +43,7 @@
   hosts: all
   become: yes
   roles:
+    - midi_audio_files_player
     - bloat_removal
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
