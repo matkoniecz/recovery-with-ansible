@@ -43,3 +43,5 @@
   become: yes
   roles:
     - bloat_removal
+    - apt_packages_autoremove_unneded
+    - apt_packages_upgrade

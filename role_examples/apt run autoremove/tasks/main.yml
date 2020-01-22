@@ -1,0 +1,5 @@
+---
+- name: Autoremove unneded apt packages
+  apt:
+   autoremove: yes
+   force_apt_get: yes
