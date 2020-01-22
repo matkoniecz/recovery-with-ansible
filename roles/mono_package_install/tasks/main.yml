@@ -1,0 +1,6 @@
+---
+- name: Install mono
+  apt:
+   name:
+     - mono-complete  # for keepass, maperitive...
+
