@@ -1,0 +1,8 @@
+---
+- name: Install backup_restore for user
+  gem:
+   name: backup_restore
+- name: Install backup_restore for the entire system
+  gem:
+   name: backup_restore
+   user_install: false
