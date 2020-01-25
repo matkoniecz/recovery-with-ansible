@@ -56,5 +56,6 @@
       - qtpass
       - 2048-qt
       - trojita # maybe better than claws-mail? looks very similar
+      - korganizer
     state: absent
     force_apt_get: yes
