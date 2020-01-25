@@ -1,0 +1,4 @@
+---
+- name: Install twine
+  pip:
+    name: twine
