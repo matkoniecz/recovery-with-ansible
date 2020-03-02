@@ -28,6 +28,7 @@
     # kate is also not showing line numbers by default (!)
     # - https://superuser.com/q/918189/376651
     # geany geany-plugin-addons - it is really flustrating
+    # featherpad is losing state on OS/program crash
     # visual studio code works OK but...
     # codium is the same, without telemetry and similar unwanted stuff
     - codium

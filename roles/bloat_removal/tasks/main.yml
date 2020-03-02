@@ -57,5 +57,14 @@
       - 2048-qt
       - trojita # maybe better than claws-mail? looks very similar
       - korganizer
+      - featherpad # is not saving state in case of OS/program crash
+      - lximage-qt # Why after deleting it keeps displaying deleted image?
+                   # Instead of moving to the next one?
+                   # It is confusing because it seems that message was not deleted,
+                   # It slows down user. In what kind of situation user wants to delete
+                   # image and keep looking at it?
+                   # On top of that image is deleted permanently instead of being moved to a
+                   # recycle bin.
+                   # (feedback send to place recommended in "about" panel)
     state: absent
     force_apt_get: yes
