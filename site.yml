@@ -41,6 +41,7 @@
     - newline_tools
     - android-studio
     - telegram
+    - kotlin
 
 - name: low_priority_changes
   hosts: all

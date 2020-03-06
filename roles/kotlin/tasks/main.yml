@@ -1,0 +1,6 @@
+---
+- name: Install Kotlin compiler
+  snap:
+    name:
+      - kotlin
+    classic: yes
