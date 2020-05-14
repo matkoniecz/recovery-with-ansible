@@ -1,0 +1,6 @@
+---
+- name: Install Peek to make screencast, as advised on https://askubuntu.com/a/833995/349903
+  apt:
+   name:
+     - peek
+   force_apt_get: yes

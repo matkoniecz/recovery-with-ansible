@@ -66,5 +66,6 @@
                    # On top of that image is deleted permanently instead of being moved to a
                    # recycle bin.
                    # (feedback send to place recommended in "about" panel)
+      - plasma-discover # for me it is an useless duplicate of apt-get
     state: absent
     force_apt_get: yes

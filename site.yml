@@ -42,6 +42,8 @@
     - android-studio
     - telegram
     - kotlin
+    - screencast_screen_capture
+    - gimp
 
 - name: low_priority_changes
   hosts: all
