@@ -13,7 +13,7 @@
     - git
     - ruby # required by legacy install scripts
     - python # required by commitment device scripts
-    - basic_dev_tools
+    - dev_tools_basic
     - backup_restore_gem
     # decent text editor that works well out of the box
     # without endless configurations
