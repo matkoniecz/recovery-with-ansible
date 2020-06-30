@@ -45,6 +45,7 @@
     - screencast_screen_capture
     - gimp
     - inkscape
+    - dev_tools_not_critical
 
 - name: low_priority_changes
   hosts: all

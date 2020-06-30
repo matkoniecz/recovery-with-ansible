@@ -1,0 +1,16 @@
+---
+- name: Install packages
+  apt:
+   name:
+      # for checking .sh file syntax - shellcheck
+      # https://github.com/koalaman/shellcheck
+      # may require also https://github.com/koalaman/shellcheck#in-your-editor
+     - shellcheck
+
+      # pyqt5 support for python3 (not a critical package)
+     - python3-pyqt5 #pygt4 is done in Ubuntu 20, is in Ubuntu 18 LTS
+
+      # show tree structure
+      # https://stackoverflow.com/questions/3455625/linux-command-to-print-directory-structure-in-the-form-of-a-tree
+     - tree
+   force_apt_get: yes
