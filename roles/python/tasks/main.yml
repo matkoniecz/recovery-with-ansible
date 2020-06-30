@@ -3,7 +3,6 @@
   apt:
    name:
      - python
-     - python-pip
      - python-dev
      - python3
      - python3-pip
