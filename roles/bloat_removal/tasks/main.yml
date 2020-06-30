@@ -67,5 +67,6 @@
                    # recycle bin.
                    # (feedback send to place recommended in "about" panel)
       - plasma-discover # for me it is an useless duplicate of apt-get
+      - noblenote
     state: absent
     force_apt_get: yes
