@@ -1,0 +1,6 @@
+---
+- name: Install Inkscape
+  apt:
+   name:
+     - inkscape
+   force_apt_get: yes
