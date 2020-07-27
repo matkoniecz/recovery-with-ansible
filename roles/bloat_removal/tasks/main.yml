@@ -70,3 +70,12 @@
       - noblenote
     state: absent
     force_apt_get: yes
+- name: remove lubuntu bloat from unknown version
+  apt:
+    name:
+      - aptitude # minesweeper bait in the main menu
+      - light-locker # disable screen locking
+      - ghostscript # launched by gs (conflicts with mispelled alias for git status)
+      - gpicview # deletes without using trash
+    state: absent
+    force_apt_get: yes

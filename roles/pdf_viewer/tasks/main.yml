@@ -1,0 +1,6 @@
+---
+- name: Install PDF viewer
+  apt:
+   name:
+     - okular
+   force_apt_get: yes

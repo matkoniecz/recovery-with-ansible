@@ -1,0 +1,8 @@
+---
+- name: Install Markdown viewer
+  apt:
+   name:
+    # editor for Markdown and reStructuredText
+    # includes preview
+     - retext
+   force_apt_get: yes

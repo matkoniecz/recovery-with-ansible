@@ -1,0 +1,6 @@
+---
+- name: Install office software
+  apt:
+   name:
+     - libreoffice
+   force_apt_get: yes

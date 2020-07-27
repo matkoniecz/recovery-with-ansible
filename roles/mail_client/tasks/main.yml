@@ -1,0 +1,6 @@
+---
+- name: Install mail client
+  apt:
+   name:
+     - claws-mail
+   force_apt_get: yes

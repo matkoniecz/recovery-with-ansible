@@ -13,4 +13,29 @@
       # show tree structure
       # https://stackoverflow.com/questions/3455625/linux-command-to-print-directory-structure-in-the-form-of-a-tree
      - tree
+
+      # checker of disk health
+      # S.M.A.R.T. monitoring tool
+     - gsmartcontrol
+
+      # change partitions etc
+     - gparted
+
+     # disk usage display
+     - baobab
+
+     # temperature graph - https://askubuntu.com/a/628124/349903
+     - psensor
+
+     # support for video processing
+     - ffmpeg
+
+     # traceroute command
+     - traceroute
+
+     # browsing sqlite
+     - sqlitebrowser
+
+     # browsing databases
+     - phpmyadmin
    force_apt_get: yes

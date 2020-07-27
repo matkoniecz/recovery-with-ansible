@@ -1,0 +1,7 @@
+---
+- name: Install pinta as paint equivalent
+  apt:
+   name:
+    # kolourpaint4 #crashes on save as of autumn 2017
+     - pinta
+   force_apt_get: yes

@@ -1,0 +1,5 @@
+---
+- name: Prevet autostart of obnoxious popup notifier
+  file:
+    path: /etc/xdg/autostart/upg-notifier-autostart.desktop
+    state: absent

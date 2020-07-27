@@ -32,6 +32,7 @@
     # visual studio code works OK but...
     # codium is the same, without telemetry and similar unwanted stuff
     - codium
+    - stop_upgrade_notifier_popup
 
 - name: my_software
   hosts: all
@@ -46,6 +47,12 @@
     - gimp
     - inkscape
     - dev_tools_not_critical
+    - mail_client
+    - paint_equivalent
+    - pdf_viewer
+    - office_software
+    - markdown_viewer
+    - office_software
 
 - name: low_priority_changes
   hosts: all
