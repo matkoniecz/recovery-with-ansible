@@ -1,0 +1,6 @@
+---
+- name: Install epub reader
+  apt:
+   name:
+     - fbreader
+   force_apt_get: yes

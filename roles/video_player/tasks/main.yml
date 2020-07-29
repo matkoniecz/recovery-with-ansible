@@ -1,0 +1,6 @@
+---
+- name: Install video player
+  apt:
+   name:
+     - vlc
+   force_apt_get: yes

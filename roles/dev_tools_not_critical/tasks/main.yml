@@ -38,4 +38,8 @@
 
      # browsing databases
      - phpmyadmin
+
+     # encoding tool
+     - enca
+
    force_apt_get: yes

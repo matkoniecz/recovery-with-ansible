@@ -1,0 +1,6 @@
+---
+- name: Install password manager
+  apt:
+   name:
+     - keepass2
+   force_apt_get: yes
