@@ -1,0 +1,6 @@
+---
+- name: Install checker program what opens a given file
+  apt:
+   name:
+     - libfile-mimeinfo-perl
+   force_apt_get: yes

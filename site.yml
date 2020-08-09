@@ -62,6 +62,7 @@
     - java
     - prepare_system_for_josm
     - youtube-dl
+    - checker_what_opens_a_given_file
 - name: low_priority_changes
   hosts: all
   become: yes
