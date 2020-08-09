@@ -1,0 +1,12 @@
+---
+- name: Install Java
+  apt:
+   name:
+    # oracle java was installed as follows
+    # echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+    # echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+    # add_apt_repository("ppa:webupd8team/java")
+    # sudo apt-get -qq install oracle-java8-installer
+    # sudo apt-get -qq install oracle-java8-set-default
+     - openjdk-11-jdk
+   force_apt_get: yes

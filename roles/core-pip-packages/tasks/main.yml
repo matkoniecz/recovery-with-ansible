@@ -1,0 +1,10 @@
+# https://docs.ansible.com/ansible/latest/modules/pip_module.html
+---
+- name: Install apt-smart
+  pip:
+    name:
+      - pillow
+      - pybrain
+      - numpy
+      - matplotlib
+    extra_args: --user

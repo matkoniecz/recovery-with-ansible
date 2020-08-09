@@ -1,0 +1,13 @@
+---
+- name: Uninstall ibus breaking JOSM
+  apt:
+   name:
+     - ibus
+   state: absent
+# I think I finally tracked down what was freezing keyboard input in JOSM,
+# what was plaguing me for years.
+# I removed ibus package from my Linux laptop some time ago what
+# seemingly removed issue.
+# https://bugs.launchpad.net/ubuntu/+source/ibus/+bug/481656
+# https://bugzilla.redhat.com/show_bug.cgi?id=1145725
+# Found via <java program losing keyboard input> internet search. 

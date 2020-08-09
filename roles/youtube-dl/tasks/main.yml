@@ -1,0 +1,7 @@
+# https://docs.ansible.com/ansible/latest/modules/pip_module.html
+---
+- name: Install apt-smart
+  pip:
+    name: apt-smart
+    extra_args: --user
+    state: latest

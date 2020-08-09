@@ -57,7 +57,9 @@
     - epub_reader
     - video_player
     - password_manager
-
+    - java
+    - prepare_system_for_josm
+    - youtube-dl
 - name: low_priority_changes
   hosts: all
   become: yes
@@ -66,4 +68,5 @@
     - bloat_removal
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
-    - python_package_uploading
+    - python_package_uploading # uploading of python packages
+    - core-pip-packages
