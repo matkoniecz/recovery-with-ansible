@@ -1,0 +1,6 @@
+# https://docs.ansible.com/ansible/latest/modules/gem_module.html
+---
+- name: Install bundler
+  gem:
+   name: bundler
+   user_install: false

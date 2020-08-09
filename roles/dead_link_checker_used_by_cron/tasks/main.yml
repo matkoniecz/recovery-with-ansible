@@ -1,0 +1,6 @@
+# https://docs.ansible.com/ansible/latest/modules/gem_module.html
+---
+- name: Install dead link checker used by cron (rawler)
+  gem:
+   name: rawler
+   user_install: false

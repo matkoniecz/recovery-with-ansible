@@ -34,6 +34,7 @@
     # codium is the same, without telemetry and similar unwanted stuff
     - codium
     - stop_upgrade_notifier_popup
+    - dead_link_checker_used_by_cron # to avoid spurious notifications about failed cron jobs
 
 - name: my_software
   hosts: all
@@ -72,3 +73,4 @@
     - python_package_uploading # uploading of python packages
     - pip_self_upgrade_pip
     - core-pip-packages
+    - per_project_gem_management
