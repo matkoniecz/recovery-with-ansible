@@ -1,0 +1,6 @@
+---
+- name: Install LaTexX
+  apt:
+   name:
+     - texlive-full
+   force_apt_get: yes

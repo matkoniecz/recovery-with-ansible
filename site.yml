@@ -74,3 +74,4 @@
     - pip_self_upgrade_pip
     - core-pip-packages
     - per_project_gem_management
+    - pdf_generator_used_by_recipe_lister
