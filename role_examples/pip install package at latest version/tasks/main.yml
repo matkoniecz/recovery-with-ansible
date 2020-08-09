@@ -3,3 +3,4 @@
   pip:
     name: apt-smart
     state: latest
+    extra_args: --user

@@ -1,4 +1,9 @@
+# https://docs.ansible.com/ansible/latest/modules/pip_module.html
+# for installing latest (upgrading) see
+# pip install package at latest version
+# example folder
 ---
 - name: Install apt-smart
   pip:
     name: apt-smart
+    extra_args: --user
