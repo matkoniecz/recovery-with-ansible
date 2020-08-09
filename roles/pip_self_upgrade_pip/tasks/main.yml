@@ -1,0 +1,7 @@
+# https://docs.ansible.com/ansible/latest/modules/pip_module.html
+---
+- name: Upgrade pip
+  pip:
+    name: pip
+    extra_args: --user
+    state: latest

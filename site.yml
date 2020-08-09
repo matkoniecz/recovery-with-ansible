@@ -15,6 +15,7 @@
     - python # required by commitment device scripts
     - dev_tools_basic
     - backup_restore_gem
+    - backup_gem
     # decent text editor that works well out of the box
     # without endless configurations
     # must have syntax code higligting
@@ -69,4 +70,5 @@
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
     - python_package_uploading # uploading of python packages
+    - pip_self_upgrade_pip
     - core-pip-packages

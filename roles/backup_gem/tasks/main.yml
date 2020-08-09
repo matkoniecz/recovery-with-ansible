@@ -1,0 +1,12 @@
+# https://docs.ansible.com/ansible/latest/modules/gem_module.html
+---
+- name: Install backup gem in version that works systemwide
+  gem:
+   name: backup
+   user_install: false
+   version: 5.0.0.beta.1 
+- name: Install backup gem in version that works for user
+  gem:
+   name: backup
+   user_install: true
+   version: 5.0.0.beta.1 
