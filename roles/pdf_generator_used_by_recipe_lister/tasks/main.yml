@@ -1,5 +1,5 @@
 ---
-- name: Install LaTexX
+- name: Install LaTeX
   apt:
    name:
      - texlive-full
