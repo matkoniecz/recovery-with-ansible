@@ -1,0 +1,5 @@
+---
+- name: Install "osmtogeojson" node.js package globally.
+  npm:
+    name: osmtogeojson
+    global: yes

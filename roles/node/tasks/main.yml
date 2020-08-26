@@ -1,0 +1,6 @@
+---
+- name: Install Node teribleness
+  apt:
+   name:
+     - nodejs
+   force_apt_get: yes
