@@ -7,11 +7,13 @@
     state: present
 - name: "Add repo"
   apt_repository:
-    repo: 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main'
+    repo: 'deb [signed-by=/etc/apt/trusted.gpg.d/vscodium-archive-keyring.gpg] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main'
 - name: "Install codium"
   apt:
     name: codium
     force_apt_get: yes
+
+# note https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/36#note_395793123
 
 # this ansible code replaces following script
 # wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
