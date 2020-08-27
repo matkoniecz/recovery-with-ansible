@@ -1,0 +1,6 @@
+---
+- name: Install osmfilter (and some other things that ae bundled in osmctools package)
+  apt:
+   name:
+     - osmctools
+   force_apt_get: yes

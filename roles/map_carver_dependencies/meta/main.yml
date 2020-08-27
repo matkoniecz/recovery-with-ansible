@@ -1,0 +1,5 @@
+---
+  dependencies:
+    - role: osmtogeojson
+    - role: mapshaper
+    - role: osmfilter

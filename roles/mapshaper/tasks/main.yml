@@ -1,0 +1,5 @@
+---
+- name: Install "mapshaper" node.js package globally.
+  npm:
+    name: mapshaper
+    global: yes
