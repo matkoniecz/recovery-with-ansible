@@ -4,7 +4,6 @@
   pip:
     name:
       - pillow
-      - pybrain
       - numpy
       - matplotlib
     extra_args: --user
