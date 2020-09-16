@@ -4,6 +4,8 @@
 # example folder
 ---
 - name: Install apt-smart
+  become: yes # needed iff --user mode is used
+  become_user: "{{ username_of_a_local_user }}" # needed iff --user mode is used
   pip:
     name: apt-smart
     extra_args: --user

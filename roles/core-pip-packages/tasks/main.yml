@@ -1,6 +1,8 @@
 # https://docs.ansible.com/ansible/latest/modules/pip_module.html
 ---
-- name: Install apt-smart
+- name: Install core pip packages
+  become: yes
+  become_user: "{{ username_of_a_local_user }}"
   pip:
     name:
       - pillow

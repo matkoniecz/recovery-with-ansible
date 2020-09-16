@@ -2,7 +2,7 @@
 ---
 - name: Install youtube-dl
   become: yes
-  become_user: mateusz
+  become_user: "{{ username_of_a_local_user }}"
   pip:
     name: youtube-dl
     extra_args: --user
