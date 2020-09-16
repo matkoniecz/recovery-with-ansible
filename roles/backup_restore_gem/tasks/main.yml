@@ -1,5 +1,7 @@
 ---
 - name: Install backup_restore for user
+  become: yes
+  become_user: "{{ username_of_a_local_user }}"
   gem:
    name: backup_restore
 - name: Install backup_restore for the entire system
