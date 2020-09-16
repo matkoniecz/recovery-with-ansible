@@ -1,7 +1,9 @@
 # https://docs.ansible.com/ansible/latest/modules/pip_module.html
 ---
-- name: Install apt-smart
+- name: Install youtube-dl
+  become: yes
+  become_user: mateusz
   pip:
-    name: apt-smart
+    name: youtube-dl
     extra_args: --user
     state: latest
