@@ -7,7 +7,7 @@
     state: present
 - name: "Add repo"
   apt_repository:
-    repo: 'deb [signed-by=/etc/apt/trusted.gpg.d/vscodium-archive-keyring.gpg] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main'
+    repo: 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main'
 - name: "Install codium"
   apt:
     name: codium
