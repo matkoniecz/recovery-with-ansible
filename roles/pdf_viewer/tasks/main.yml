@@ -2,5 +2,5 @@
 - name: Install PDF viewer
   apt:
    name:
-     - okular
+     - okular # if different one would be used then set_default_programs_for_file_types also needs to be modified
    force_apt_get: yes

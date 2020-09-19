@@ -1,0 +1,4 @@
+---
+  dependencies:
+    - role: codium
+    - role: pdf_viewer # note, it is assumed to be Okular
