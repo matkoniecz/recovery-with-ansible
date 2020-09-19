@@ -95,10 +95,15 @@
     - bloat_removal
     - virtualbox
     - midi_audio_files_player
-    - apt_packages_autoremove_unneded
-    - apt_packages_upgrade
     - python_package_uploading # uploading of python packages
     - pip_self_upgrade_pip
     - core-pip-packages
     - per_project_gem_management
     - pdf_generator_used_by_recipe_lister
+- name: final_cleanup
+  hosts: all
+  vars:
+    - username_of_a_local_user: mateusz
+  become: yes
+    - apt_packages_autoremove_unneded
+    - apt_packages_upgrade
