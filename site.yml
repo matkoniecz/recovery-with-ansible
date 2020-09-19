@@ -93,6 +93,7 @@
   become: yes
   roles:
     - bloat_removal
+    - spellcheck_dictionaries
     - virtualbox
     - midi_audio_files_player
     - python_package_uploading # uploading of python packages

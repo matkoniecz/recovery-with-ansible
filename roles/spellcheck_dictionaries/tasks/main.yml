@@ -1,0 +1,7 @@
+---
+- name: Install virtualisation support
+  apt:
+   name:
+     - aspell-pl
+     - aspell-en
+   force_apt_get: yes
