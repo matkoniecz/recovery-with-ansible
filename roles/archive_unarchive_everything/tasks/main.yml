@@ -1,0 +1,23 @@
+---
+- name: Install system dependecies of scipy python package
+  apt:
+   name:
+     - arj
+     - bzip2
+     - cpio
+     - dpkg
+     - gzip
+     - lzma
+     - rar
+     - tar
+     - unrar
+     - unzip
+     - zip
+     - rpm
+     - unace
+     - lhasa
+     - p7zip-full
+     - gfortran
+     - libopenblas-dev
+     - liblapack-dev
+   force_apt_get: yes
