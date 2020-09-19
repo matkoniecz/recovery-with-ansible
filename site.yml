@@ -84,6 +84,7 @@
     - youtube-dl
     - checker_what_opens_a_given_file
     - map_carver_dependencies
+    # k3b # good for cd ripping, but buggy, during burning it managed to destroy multiple CDs
     - set_default_programs_for_file_types
 - name: low_priority_changes
   hosts: all
