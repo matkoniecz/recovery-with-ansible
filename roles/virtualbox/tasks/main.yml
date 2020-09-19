@@ -1,0 +1,6 @@
+---
+- name: Install virtualisation support
+  apt:
+   name:
+     - virtualbox
+   force_apt_get: yes

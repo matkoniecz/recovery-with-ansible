@@ -93,6 +93,7 @@
   become: yes
   roles:
     - bloat_removal
+    - virtualbox
     - midi_audio_files_player
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
