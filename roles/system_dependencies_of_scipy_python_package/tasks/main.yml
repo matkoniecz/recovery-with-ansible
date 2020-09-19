@@ -1,0 +1,8 @@
+---
+- name: Install system dependecies of scipy python package
+  apt:
+   name:
+     - gfortran
+     - libopenblas-dev
+     - liblapack-dev
+   force_apt_get: yes

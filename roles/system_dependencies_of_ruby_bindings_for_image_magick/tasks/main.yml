@@ -1,0 +1,8 @@
+---
+- name: Install system dependecies of Ruby bindings for ImageMagick ("rmagick")
+  apt:
+   name:
+     - imagemagick
+     - libmagickcore-dev
+     - libmagickwand-dev
+   force_apt_get: yes
