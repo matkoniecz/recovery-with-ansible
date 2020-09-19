@@ -1,0 +1,11 @@
+# for hp printers https://askubuntu.com/questions/575547/how-can-i-install-hp-laserjet-p1102w-on-ubuntu
+--- 
+- 
+  apt:
+    force_apt_get: true
+    name:
+      - hplip
+- 
+  debug:
+    msg: "Requires further manual installation because printers are cursed demons from hell, AD 2020 and we still have Plug & Pray, and Win10 manages to be worse than Linux, seriously..."
+  name: "Install printer driver support"
