@@ -1,0 +1,4 @@
+---
+- name: Install dependecies of cron scripts
+  debug:
+    msg: "Dependencies installed :)"

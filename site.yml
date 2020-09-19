@@ -52,7 +52,7 @@
     # codium is the same, without telemetry and similar unwanted stuff
     - codium
     - stop_upgrade_notifier_popup
-    - dead_link_checker_used_by_cron # to avoid spurious notifications about failed cron jobs
+    - cron_dependencies # to avoid spurious notifications about failed cron jobs
 
 - name: my_software
   hosts: all

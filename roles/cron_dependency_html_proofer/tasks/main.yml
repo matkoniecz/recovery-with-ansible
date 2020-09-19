@@ -1,0 +1,6 @@
+# https://docs.ansible.com/ansible/latest/modules/gem_module.html
+---
+- name: Install html-proofer gem for the entire system
+  gem:
+   name: html-proofer
+   user_install: false

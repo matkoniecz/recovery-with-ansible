@@ -1,0 +1,4 @@
+---
+- name: Install dependecies of map carver
+  debug:
+    msg: "Dependencies installed :)"
