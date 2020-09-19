@@ -92,8 +92,8 @@
     - username_of_a_local_user: mateusz
   become: yes
   roles:
-    - midi_audio_files_player
     - bloat_removal
+    - midi_audio_files_player
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
     - python_package_uploading # uploading of python packages
