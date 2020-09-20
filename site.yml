@@ -63,7 +63,7 @@
     - keepass
     - newline_tools
     - android-studio
-    - telegram
+    #- telegram
     - kotlin
     - screencast_screen_capture
     - gimp
