@@ -1,0 +1,15 @@
+---
+- name: Install shutter
+  snap:
+    name:
+      - shutter
+    # prtscrn
+    # install_package("flameshot")
+    # shutter was great but appears to be deprecated in Lubuntu 19
+    # see http://ubuntuhandbook.org/index.php/2019/04/install-shutter-ubuntu-19-04/
+    # but it installable again! See https://www.omgubuntu.co.uk/2020/07/install-shutter-on-ubuntu-20-04-snap
+    # https://itsfoss.com/install-shutter-ubuntu/ points to alternative source with some ppa
+
+    # install_package("shutter")
+    # unused, unwanted, slows down shutter start
+    # execute_command("sudo rm /usr/share/shutter/resources/system/upload_plugins/upload/*")
