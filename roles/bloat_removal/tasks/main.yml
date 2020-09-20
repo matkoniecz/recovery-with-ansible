@@ -79,3 +79,13 @@
       - gpicview # deletes without using trash
     state: absent
     force_apt_get: yes
+- name: purge zeitgeist for disturbing backup diffs and being creepy
+  apt:
+    name:
+      - zeitgeist
+      - zeitgeist-core
+      - zeitgeist-datahub
+      - zeitgeist-sharp
+    state: absent
+    purge: yes
+    force_apt_get: yes
