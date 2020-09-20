@@ -1,0 +1,16 @@
+---
+- name: Install music player with automatic ratings (Clementine)
+  apt:
+   name:
+     - clementine
+   force_apt_get: yes
+# installing from source is in
+# https://gist.github.com/matkoniecz/173fcbb2b80c4ba3f4f142b6b9820637
+# BECAUSE YAML HAS 63 WAYS TO HAVE MULTILINE STRINGS AND 0 TO HAVE
+# MULTILINE COMMENTS!
+#
+# https://stackoverflow.com/questions/3790454/how-do-i-break-a-string-over-multiple-lines#21699210
+#
+#
+# "You might not believe it, but YAML can do multi-line keys too:"
+# https://stackoverflow.com/a/26556401/4130619
