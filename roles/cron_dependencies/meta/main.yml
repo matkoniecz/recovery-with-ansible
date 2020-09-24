@@ -2,3 +2,4 @@
   dependencies:
     - role: cron_dependency_dead_link_checker
     - role: cron_dependency_html_proofer
+    - role: cron_dependency_hosts_updater_dependencies
