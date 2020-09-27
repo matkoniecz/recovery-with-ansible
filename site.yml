@@ -96,6 +96,7 @@
   become: yes
   roles:
     - bloat_removal
+    - naming_conflict_removal
     - spellcheck_dictionaries
     - virtualbox
     - midi_audio_files_player
