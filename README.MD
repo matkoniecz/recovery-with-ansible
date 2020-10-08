@@ -11,6 +11,13 @@ sudo bash run.sh
 
 # Windows
 
+- In start menu search "feat" to get access to "Turn Windows features on and off".
+- Scroll to bottom of the list and enable Windows Subsystem for Linux
+- Restart system as required.
+- Go to Windows Store, download Ubuntu
+- Launch Ubuntu
+
+
 https://docs.ansible.com/ansible/latest/user_guide/windows.html#windows 
 
 https://docs.ansible.com/ansible/latest/user_guide/windows_faq.html#can-ansible-run-on-windows
