@@ -113,5 +113,6 @@
   vars:
     - username_of_a_local_user: mateusz
   become: yes
+  roles:
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
