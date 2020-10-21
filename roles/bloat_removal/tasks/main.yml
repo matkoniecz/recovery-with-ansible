@@ -70,6 +70,12 @@
       - noblenote
     state: absent
     force_apt_get: yes
+- name: remove lubuntu 20 bloat
+  apt:
+    name:
+      - quassel # IRC client, I am not using IRC
+    state: absent
+    force_apt_get: yes
 - name: remove lubuntu bloat from unknown version
   apt:
     name:
