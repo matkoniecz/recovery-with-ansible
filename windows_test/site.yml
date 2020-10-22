@@ -1,0 +1,25 @@
+---
+- name: bootstrap
+  hosts: localhost
+  vars:
+    - ansible_connection: local
+  #gather_facts: false
+  # if for some reason I need to start supporting CentOS or other OS with yum then
+  # https://relativkreativ.at/articles/how-to-install-python-with-ansible
+  # has a potential code
+  tasks:
+    - name: run netstat and return Ethernet stats 
+      win_command: netstat -e
+      register: netstat
+    - debug: var=netstat
+    - name: Install python if not installed
+      raw: sh -c 'test -x /usr/bin/python3 || (apt-get update && apt-get -y install python3-minimal)'
+      register: out
+      changed_when: out.stdout != ""
+    - name: Ensure 7-Zip is installed via Chocolatey
+      win_chocolatey:
+        name: 7zip
+        state: present
+    - set_fact:
+        ansible_python_interpreter: /usr/bin/python3
+      tags: always

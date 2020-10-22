@@ -6,6 +6,7 @@ sudo apt-get update
 sudo apt-get install git -y
 git clone https://github.com/matkoniecz/recovery-with-ansible
 cd recovery-with-ansible
+git fetch origin
 sudo bash run.sh
 ```
 
@@ -15,12 +16,55 @@ sudo bash run.sh
 
 See official docs at https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#host-requirements
 
+## Minimum Powershell version
+
+Run in Powershell console:
+
+`Get-Host | Select-Object Version`
+
+If it is >4 then it is OK. For lower versions extra steps are needed.
+
+
+## WinRM service
+
+WinRM service must be configured so that Ansible can connect to it.
+
+See https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#winrm-setup
+
 ## Get WSL to run Ansible from computer that will be configured 
 - In start menu search "feat" to get access to "Turn Windows features on and off".
 - Scroll to bottom of the list and enable Windows Subsystem for Linux
 - Restart system as required.
 - Go to Windows Store, download Ubuntu
 - Launch Ubuntu
+
+## Linux on Windows
+
+- Launch Ubuntu
+- Note that Windows drives are in `/mnt/`
+tmp test:
+
+```
+cd ~
+sudo apt-get update
+sudo apt-get install git -y
+git clone https://github.com/matkoniecz/recovery-with-ansible
+cd recovery-with-ansible
+cd windows_test
+git fetch origin
+sudo bash run.sh
+```
+
+once Ansible will be Windows ready:
+```
+cd ~
+sudo apt-get update
+sudo apt-get install git -y
+git clone https://github.com/matkoniecz/recovery-with-ansible
+cd recovery-with-ansible
+git fetch origin
+sudo bash run.sh
+```
 
 ## Unprocessed hints
 
