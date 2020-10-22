@@ -31,16 +31,47 @@ WinRM service must be configured so that Ansible can connect to it.
 
 See https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#winrm-setup
 
+Make your trusted network private, as WinRM will work [only in private networks](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) (changing WinRM behavior is possible but not recommended).
+
+[Run](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) `Enable-PSRemoting` in powershell as an admin.
+
 ## Get WSL to run Ansible from computer that will be configured 
+
+### Enable WSL
+
+See https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
 - In start menu search "feat" to get access to "Turn Windows features on and off".
 - Scroll to bottom of the list and enable Windows Subsystem for Linux
 - Restart system as required.
+
+```
+ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+
+was [mentioned](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) as a proper alternative
+
+[Enable](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) Basic Auth:
+`Set-Item -Path WSMan:\localhost\Service\Auth\Basic -Value $true`
+
+[Enable](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) Unencrypted connection:
+`Set-Item -Path WSMan:\localhost\Service\AllowUnencrypted -Value $true`
+
+### Install Linux on Windows
 - Go to Windows Store, download Ubuntu
 - Launch Ubuntu
 
+```
+Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
+```
+
+was [mentioned](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) as a proper alternative
+
+though it appears to download specific Ubuntu version
+
 ## Linux on Windows
 
-- Launch Ubuntu
+- Launch Ubuntu (as WSL)
 - Note that Windows drives are in `/mnt/`
 tmp test:
 
@@ -67,6 +98,8 @@ sudo bash run.sh
 ```
 
 ## Unprocessed hints
+
+https://github.com/gmarokov/ansible-playbook-postinstall-win
 
 https://docs.ansible.com/ansible/latest/user_guide/windows.html#windows 
 
