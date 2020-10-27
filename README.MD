@@ -124,3 +124,7 @@ https://www.how2shout.com/how-to/how-to-install-ansible-on-windows-10.html
 https://docs.microsoft.com/en-us/windows/wsl/
 
 see Telegram discussion
+
+https://stackoverflow.com/questions/58345011/setup-windows-10-workstation-using-ansible-installed-on-wsl
+
+https://opensource.com/article/19/2/ansible-windows-admin
