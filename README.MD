@@ -113,6 +113,8 @@ sudo bash run.sh
 
 ## Unprocessed hints
 
+https://github.com/Wintus/Ansible-WSL
+
 https://github.com/gmarokov/ansible-playbook-postinstall-win
 
 https://docs.ansible.com/ansible/latest/user_guide/windows.html#windows 
