@@ -54,7 +54,7 @@ If it is >4 then it is OK. For lower versions extra steps are needed.
 
 WinRM service must be configured so that Ansible can connect to it.
 
-See https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#winrm-setup
+See https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#winrm-setup (note https://github.com/ansible/ansible/issues/72449 )
 
 Make your trusted network private, as WinRM will work [only in private networks](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) (changing WinRM behavior is possible but not recommended).
 
@@ -77,7 +77,7 @@ See https://docs.microsoft.com/en-us/windows/wsl/install-win10
 was [mentioned](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) as a proper alternative
 
 [Enable](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) Basic Auth:
-`Set-Item -Path WSMan:\localhost\Service\Auth\Basic -Value $true`
+`Set-Item -Path WSMan:\localhost\Service\Auth\Basic -Value $true` (note https://github.com/ansible/ansible/issues/72449 )
 
 [Enable](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) Unencrypted connection:
 `Set-Item -Path WSMan:\localhost\Service\AllowUnencrypted -Value $true`
