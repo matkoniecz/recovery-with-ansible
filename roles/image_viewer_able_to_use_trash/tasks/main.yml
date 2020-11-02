@@ -1,0 +1,11 @@
+---
+- name: Install EOG
+  apt:
+   name:
+     - eog
+  # alternatives
+  # see my question at
+  # https://askubuntu.com/questions/551066/simple-image-viewer-that-is-using-trash-rather-than-permanently-deleting-files
+  # sudo apt-get -qq install gthumb -y
+  # install_package("geeqie") # animated gif support is missing, dead project
+   force_apt_get: yes
