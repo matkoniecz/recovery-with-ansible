@@ -4,6 +4,9 @@
   args:
     creates: /tmp/apt-smart-was-run-recently
 - name: Create file to mark that apt-smart was just completed
-  command: touch /tmp/apt-smart-was-run-recently
-  args:
-    creates: /tmp/apt-smart-was-run-recently
+  file: 
+    path: /tmp/apt-smart-was-run-recently 
+    state: touch
+#  command: touch /tmp/apt-smart-was-run-recently
+#  args:
+#    creates: /tmp/apt-smart-was-run-recently
