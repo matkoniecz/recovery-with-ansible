@@ -19,6 +19,24 @@ sudo bash run.sh
 
 # Windows
 
+## Current temporary setup script
+
+https://chocolatey.org/docs/installation
+
+```
+choco install keepass -y
+choco install firefox -y
+choco install notepadplusplus -y
+choco install 7zip -y
+choco install git -y
+choco install adobereader -y
+choco install ruby -y
+choco install vlc -y
+
+choco install libreoffice -y
+choco install androidstudio
+```
+
 ## Configure Windows host so it can listen to Ansible commands
 
 See official docs at https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#host-requirements
