@@ -24,6 +24,27 @@ sudo bash run.sh
 https://chocolatey.org/docs/installation
 
 ```
+
+//remove hibernation pretending to be shutdown
+//sudo required
+// https://superuser.com/a/1187234
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f
+
+// unpin from taskbar
+# https://stackoverflow.com/questions/45152335/unpin-the-microsoft-edge-and-store-taskbar-shortcuts-programmatically
+$appname = "Microsoft Edge"
+((New-Object -Com Shell.Application).NameSpace('shell:::{4234d49b-0245-4df3-b780-3893943456e1}').Items() | ?{$_.Name -eq $appname}).Verbs() | ?{$_.Name.replace('&','') -match 'Unpin from taskbar'} | %{$_.DoIt(); $exec = $true}
+$appname = "Windows Store"
+((New-Object -Com Shell.Application).NameSpace('shell:::{4234d49b-0245-4df3-b780-3893943456e1}').Items() | ?{$_.Name -eq $appname}).Verbs() | ?{$_.Name.replace('&','') -match 'Unpin from taskbar'} | %{$_.DoIt(); $exec = $true}
+
+# certificate myself as understanding that running script executes program
+Set-ExecutionPolicy Unrestricted -force
+
+# execute https://chocolatey.org/install.ps1
+# yes, I am trusting Chocolatey and that they are not hacked, but
+# installing using their packages is doing this anyway
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
 choco install keepass -y
 choco install firefox -y
 choco install notepadplusplus -y
@@ -32,10 +53,38 @@ choco install git -y
 choco install adobereader -y
 choco install ruby -y
 choco install vlc -y
-
 choco install libreoffice -y
-choco install androidstudio
+choco install androidstudio -y
+
+# https://community.spiceworks.com/topic/2226336-powershell-uninstall-apps-from-start-in-windows10
+# list of installed stuff
+DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename 
+
+# https://deviceadvice.io/2020/01/13/deploy-a-powershell-script-with-intune-to-remove-solitaire-or-any-other-built-in-windows-10-app/
+# remove specific package
+$listOfApps = get-appxpackage
+$appToRemove = $listOfApps | where-object {$_ -like "*Solitaire*"}
+Remove-AppxPackage -package $appToRemove.packagefullname
+
+$listOfApps = get-appxpackage
+$appToRemove = $listOfApps | where-object {$_ -like "*Zune*"}
+Remove-AppxPackage -package $appToRemove.packagefullname
+
+$listOfApps = get-appxpackage
+$appToRemove = $listOfApps | where-object {$_ -like "*Spotify*"}
+Remove-AppxPackage -package $appToRemove.packagefullname
+
+
 ```
+
+windows decrappifiers
+
+https://github.com/geekygirlsarah/remove_win10_apps/blob/master/Uninstall_Win10_Apps.ps1
+https://github.com/erkserkserks/windows-10-decrapifier
+https://gist.github.com/gvlx/b4d4c5681900ca965276fc5c16fe8520
+https://gist.github.com/nicelife90/26de9fee18a2ea22278d1507d0cb2b13 
+https://www.hybrid-365.com/powershell/how-to-change-default-apps-in-windows-10-using-powershell/
+
 
 ## Configure Windows host so it can listen to Ansible commands
 
