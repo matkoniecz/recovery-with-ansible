@@ -1,0 +1,7 @@
+---
+- name: Install arandr
+  apt:
+   name:
+    # multiple monitors (for example laptop screen + external monitor)
+     - arandr
+   force_apt_get: yes
