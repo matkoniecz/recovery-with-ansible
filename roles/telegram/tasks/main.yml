@@ -1,5 +1,0 @@
----
-- name: Install Telegram
-  snap:
-    name:
-      - telegram-desktop

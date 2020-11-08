@@ -1,0 +1,6 @@
+---
+- name: Install Flatpak
+  apt:
+   name:
+     - flatpak
+   force_apt_get: yes

@@ -98,6 +98,7 @@
   become: yes
   roles:
     - bloat_removal
+    - no_snap_telegram # if really wanted: flatpak or straight binary install
     - naming_conflict_removal
     - spellcheck_dictionaries
     - virtualbox
@@ -110,6 +111,7 @@
     - system_dependencies_of_ruby_bindings_for_image_magick
     - system_dependencies_of_scipy_python_package
     - pdf_generator_used_by_recipe_lister
+    - flatpak
 - name: final_cleanup
   hosts: all
   vars:
