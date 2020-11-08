@@ -74,6 +74,7 @@
   apt:
     name:
       - quassel # IRC client, I am not using IRC
+      - fcitx # some special input method handling, for Chinese characters (???)
     state: absent
     force_apt_get: yes
 - name: remove lubuntu bloat from unknown version
