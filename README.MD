@@ -19,6 +19,10 @@ sudo bash run.sh
 
 # Windows
 
+## Proper Ansible
+
+Blocked by [https://github.com/ansible/ansible/issues/72449](https://github.com/ansible/ansible/issues/72449)
+
 ## Current temporary setup script
 
 https://chocolatey.org/docs/installation
