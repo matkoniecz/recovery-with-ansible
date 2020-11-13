@@ -60,7 +60,6 @@
     - username_of_a_local_user: mateusz
   become: yes
   roles:
-    - keepass
     - program_to_select_monitor_or_monitors_displaying_screen
     - newline_tools
     - android-studio
@@ -79,7 +78,7 @@
     - cd_burner
     - epub_reader
     - video_player
-    - password_manager
+    - password_manager # keepass
     - java
     - prepare_system_for_josm
     - youtube-dl

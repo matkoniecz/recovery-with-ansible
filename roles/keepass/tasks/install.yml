@@ -1,6 +1,0 @@
----
-- name: Install Keepass
-  apt:
-   name:
-     - keepass2
-   force_apt_get: yes
