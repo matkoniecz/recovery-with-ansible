@@ -91,6 +91,7 @@
     - print_screen_capture_tool
     - image_viewer_able_to_use_trash
     - set_default_programs_for_file_types
+    - borg_backup
 - name: low_priority_changes
   hosts: all
   vars:

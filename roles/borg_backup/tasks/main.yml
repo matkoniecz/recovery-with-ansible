@@ -1,0 +1,6 @@
+---
+- name: Install Borg backup tool
+  apt:
+   name:
+     - borgbackup
+   force_apt_get: yes
