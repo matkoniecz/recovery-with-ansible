@@ -59,6 +59,7 @@ choco install ruby -y
 choco install vlc -y
 choco install libreoffice -y
 choco install androidstudio -y
+choco install vscodium -y
 
 https://gitlab.com/geekygirlsarah/remove_win10_apps/-/blob/master/Uninstall_Win10_Apps.ps1
 
