@@ -155,7 +155,7 @@ See https://docs.microsoft.com/en-us/windows/wsl/install-win10
 - Restart system as required.
 
 ```
- Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
 was [mentioned](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-ansible-41aj) as a proper alternative
@@ -169,6 +169,12 @@ was [mentioned](https://dev.to/gmarokov/configure-your-dev-windows-machine-with-
 ### Install Linux on Windows
 - Go to Windows Store, download Ubuntu
 - Launch Ubuntu
+
+```
+choco install wsl-ubuntu-1804
+```
+
+from https://superuser.com/questions/1271682/is-there-a-way-of-installing-ubuntu-windows-subsystem-for-linux-on-win10-v170
 
 ```
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
