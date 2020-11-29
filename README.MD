@@ -61,7 +61,7 @@ choco install libreoffice -y
 choco install androidstudio -y
 choco install vscodium -y
 choco install inkscape -y
-
+choco install gimp -y
 
 https://gitlab.com/geekygirlsarah/remove_win10_apps/-/blob/master/Uninstall_Win10_Apps.ps1
 
