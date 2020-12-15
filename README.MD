@@ -63,6 +63,8 @@ choco install vscodium -y
 choco install inkscape -y
 choco install gimp -y
 
+clean C:\Users\mateusz\AppData\Local\Temp\chocolatey ( [cache cleanup is in premium version, wtf](https://github.com/chocolatey/choco/issues/1124#issuecomment-352315426) )
+
 https://gitlab.com/geekygirlsarah/remove_win10_apps/-/blob/master/Uninstall_Win10_Apps.ps1
 
 Get-AppxPackage -AllUsers Microsoft.3DBuilder | Remove-AppxPackage                      # Uninstall 3D Builder
@@ -114,6 +116,8 @@ Get-AppxPackage -AllUsers *DolbyAccess* | Remove-AppxPackage                    
 
 
 ```
+
+Start -> Settings -> Lock screen -> disable windows spotlight
 
 windows decrappifiers
 
