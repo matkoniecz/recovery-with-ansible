@@ -1,0 +1,6 @@
+---
+- name: Install tldr docs
+  apt:
+   name:
+     - tldr
+   force_apt_get: yes
