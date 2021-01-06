@@ -1,0 +1,6 @@
+---
+- name: Install ripgrep
+  apt:
+   name:
+     - ripgrep
+   force_apt_get: yes

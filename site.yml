@@ -92,6 +92,7 @@
     - set_default_programs_for_file_types
     - borg_backup
     - install_readable_documentation
+    - ripgrep
 - name: low_priority_changes
   hosts: all
   vars:
