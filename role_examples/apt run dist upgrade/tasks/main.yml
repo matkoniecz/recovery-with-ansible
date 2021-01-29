@@ -1,5 +1,5 @@
 ---
-- name: Run dist-upgrage for apt packages
+- name: Run dist-upgrade for apt packages
   apt:
    upgrade: dist
    force_apt_get: yes
