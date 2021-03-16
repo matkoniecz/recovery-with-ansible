@@ -1,5 +1,9 @@
 # https://docs.ansible.com/ansible/latest/modules/apt_key_module.html
 # https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
+
+# seems broken - see https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/57
+# switch to snap cancer? Measure boot time in case of snap - https://github.com/VSCodium/vscodium#install-with-snap-gnulinux
+# switch to VSCode?
 ---
 - name: Add an Apt signing key, uses whichever key is at the URL
   apt_key:
