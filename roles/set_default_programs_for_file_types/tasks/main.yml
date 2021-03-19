@@ -1,3 +1,24 @@
+# file --mime-type -b sudolightburn.sh
+# to see mimetype
+
+# xdg-mime query default text/plain
+# to see current
+
+# xdg-mime default codium.desktop text/plain
+# to change
+
+# .desktop files should be in /usr/share/applications
+# https://askubuntu.com/questions/16580/where-are-file-associations-stored
+
+# cat /usr/share/applications/defaults.list
+# to see defaults (system ones?)
+# can be located with following command:
+# locate defaults.list
+
+# cat ~/.config/mimeapps.list
+# to user specifc stuff, at least in Lubuntu 20.04
+
+
 ---
 # is this task actually needed?
 # var definition:
@@ -8,10 +29,11 @@
 #    state: directory
 #    path: "{{ xdg_mime_config_dir }}"
 #    mode: 0700
-- name: Install package with xdg-mime
+- name: Install packages with xdg-mime and other helper tools
   apt:
    name:
      - xdg-utils
+     - mlocate
    force_apt_get: yes
 
 - name: Set plain text files to be opened with Codium
