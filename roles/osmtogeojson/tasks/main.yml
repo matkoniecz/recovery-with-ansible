@@ -1,3 +1,6 @@
+# manual install:
+# sudo npm install -g osmtogeojson 
+# http://tyrasd.github.io/osmtogeojson/
 ---
 - name: Install "osmtogeojson" node.js package globally.
   npm:
