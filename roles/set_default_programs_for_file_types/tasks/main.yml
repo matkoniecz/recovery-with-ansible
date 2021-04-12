@@ -1,6 +1,13 @@
 # file --mime-type -b sudolightburn.sh
-# to see mimetype
-# in cases where this failed:
+# to see mimetype based on file contents
+
+# xdg-mime query filetype Bicycle.validator.mapcss
+# to see mimetype based on declared file extensions
+
+# see https://askubuntu.com/questions/844864/why-the-difference-between-the-results-with-file-mime-type-and-xdg-mime-que
+# for description of differences
+
+# in cases where this failed (text/plain gets returned):
 # cat ~/.config/mimeapps.list
 # change in GUI
 # cat ~/.config/mimeapps.list
