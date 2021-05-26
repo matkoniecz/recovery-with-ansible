@@ -76,3 +76,8 @@
 - name: Set epubs files to be opened with Okular
   command: "xdg-mime default okularApplication_epup.desktop application/epub+zip"
   changed_when: False
+
+- name: Set Markdown (md) files to be opened with ReText
+  command: "xdg-mime default me.mitya57.ReText.desktop text/markdown"
+  changed_when: False
+

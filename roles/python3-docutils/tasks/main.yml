@@ -1,0 +1,6 @@
+---
+- name: Install python3-docutils
+  apt:
+   name:
+     - python3-docutils
+   force_apt_get: yes

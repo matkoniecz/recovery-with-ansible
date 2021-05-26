@@ -1,8 +1,8 @@
+# https://github.com/retext-project/retext#welcome-to-retext
 ---
-- name: Install Markdown viewer
-  apt:
-   name:
-    # editor for Markdown and reStructuredText
-    # includes preview
-     - retext
-   force_apt_get: yes
+- name: Install ReText
+  become: yes # needed iff --user mode is used
+  become_user: "{{ username_of_a_local_user }}" # needed iff --user mode is used
+  pip:
+    name: ReText
+    extra_args: --user
