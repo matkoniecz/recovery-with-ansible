@@ -1,3 +1,15 @@
+# manual install, say due to bug in Ansible
+# sudo npm install -g mapshaper --update
+#
+# strict replacement of below:
+# sudo npm install -g mapshaper
+
+# ongoing bug:
+# The error was: json.decoder.JSONDecodeError
+# it appears to be failing with something fixed in https://github.com/ansible-collections/community.general/pull/1625
+# broken in Ansible 2.9.6
+# ansible --version
+
 ---
 - name: Install "mapshaper" node.js package globally.
   npm:

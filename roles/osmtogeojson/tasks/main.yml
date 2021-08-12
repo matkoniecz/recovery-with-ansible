@@ -1,6 +1,8 @@
 # manual install:
 # sudo npm install -g osmtogeojson 
 # http://tyrasd.github.io/osmtogeojson/
+
+# it appears to be failing with something fixed in https://github.com/ansible-collections/community.general/pull/1625
 ---
 - name: Install "osmtogeojson" node.js package globally.
   npm:
