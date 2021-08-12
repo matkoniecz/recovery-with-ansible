@@ -5,5 +5,5 @@
 set -ev
 
 sudo apt-get install ansible -y
-echo "localhost ansible_connection=local user=$USER" > inventory
+echo "localhost ansible_connection=local user=$USER ansible_python_interpreter=/usr/bin/python3" > inventory
 ansible-playbook -v -i inventory site.yml
