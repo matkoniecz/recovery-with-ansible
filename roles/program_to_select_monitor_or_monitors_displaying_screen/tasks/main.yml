@@ -4,4 +4,7 @@
    name:
     # multiple monitors (for example laptop screen + external monitor)
      - arandr
+    # automate applying settings
+    # https://askubuntu.com/questions/754231/how-do-i-save-my-new-resolution-setting-with-xrandr/1130337#1130337
+     - autorandr
    force_apt_get: yes
