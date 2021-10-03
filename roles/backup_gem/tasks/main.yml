@@ -4,11 +4,11 @@
   gem:
    name: backup
    user_install: false
-   version: 5.0.0.beta.1 
+   version: 5.0.0.beta.3
 - name: Install backup gem in version that works for user
   become: yes
   become_user: "{{ username_of_a_local_user }}"
   gem:
    name: backup
    user_install: true
-   version: 5.0.0.beta.1 
+   version: 5.0.0.beta.3
