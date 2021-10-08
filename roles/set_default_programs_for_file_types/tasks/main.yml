@@ -63,6 +63,10 @@
   command: "xdg-mime default codium.desktop text/vnd.qt.linguist"
   changed_when: False
 
+- name: Set Java files to be opened with Codium
+  command: "xdg-mime default codium.desktop text/x-java"
+  changed_when: False
+
 - name: Set .mapcss to be opened with Codium, override some misclassification opening it in Yudit, whatever purpose of that text editor is
   command: "xdg-mime default codium.desktop text/x-csrc"
   changed_when: False
