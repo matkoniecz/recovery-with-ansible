@@ -1,3 +1,5 @@
+# sudo add-apt-repository ppa:libreoffice/ppa
+# I used it to get less outdated libre office
 ---
 - name: Install office software
   apt:
