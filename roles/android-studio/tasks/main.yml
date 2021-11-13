@@ -4,8 +4,14 @@
    name:
      - lib32z1 # http://askubuntu.com/questions/644667/gradle-executing-tasks-runs-forever
      - lib32stdc++6  # https://developer.android.com/studio/install.html
-     # following are needed according to https://developer.android.com/studio/install.html but unavailable as of Ubuntu 19, appears to be not needed
-     # libc6:i386 libncurses5:i386 libstdc++6:i386 libbz2-1.0:i386
+     # following are needed according to https://developer.android.com/studio/install.html
+     # but were unavailable on Ubuntu 19, appeared to be not needed
+     # As of 2021-11-14 they are available on Ubuntu 20.04, so listed them again but not sure is it
+     # really necessary anymore
+     - libc6:i386
+     - libncurses5:i386
+     - libstdc++6:i386
+     - libbz2-1.0:i386
    force_apt_get: yes
 - name: Install Android Studio
   snap:
