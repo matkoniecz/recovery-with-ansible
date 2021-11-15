@@ -92,7 +92,7 @@ Get-AppxPackage -AllUsers Microsoft.Office.OneNote | Remove-AppxPackage         
 Get-AppxPackage -AllUsers Microsoft.OneConnect | Remove-AppxPackage                     # Uninstall Paid Wi-Fi & Cellular
 Get-AppxPackage -AllUsers Microsoft.People | Remove-AppxPackage                         # Uninstall People
 Get-AppxPackage -AllUsers Microsoft.WindowsPhone | Remove-AppxPackage                   # Uninstall Phone Companion
-Get-AppxPackage -AllUsers Microsoft.Windows.Photos | Remove-AppxPackage                 # Uninstall Photos
+# Get-AppxPackage -AllUsers Microsoft.Windows.Photos | Remove-AppxPackage                 # Uninstall Photos
 Get-AppxPackage -AllUsers Microsoft.Reader | Remove-AppxPackage                         # Uninstall Reader
 Get-AppxPackage -AllUsers Microsoft.BingSports | Remove-AppxPackage                     # Uninstall Sports
 Get-AppxPackage -AllUsers Microsoft.Office.Sway | Remove-AppxPackage                    # Uninstall Sway
