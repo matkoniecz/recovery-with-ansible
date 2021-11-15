@@ -29,8 +29,8 @@ https://chocolatey.org/docs/installation
 
 ```
 
-//remove hibernation pretending to be shutdown
-//sudo required
+// remove hibernation pretending to be shutdown, required for dual-boot (not sure is it case of badly designed Linux or evil Microsoft sobotaging Linux)
+// sudo required
 // https://superuser.com/a/1187234
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f
 
