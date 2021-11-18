@@ -52,47 +52,58 @@
    force_apt_get: yes
 
 - name: Set plain text files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/plain"
   changed_when: False
 
 - name: Set files with shell scripts to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop application/x-shellscript"
   changed_when: False
 
 - name: Set TypeScript files to be opened with Codium, override some Qt Linguist misclassification
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/vnd.qt.linguist"
   changed_when: False
 
 - name: Set Java files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/x-java"
   changed_when: False
 
 - name: Set XML files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop application/xml"
   changed_when: False
 
 - name: Really set XML files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/xml"
   changed_when: False
 
 - name: Set .mapcss to be opened with Codium, override some misclassification opening it in Yudit, whatever purpose of that text editor is
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/x-csrc"
   changed_when: False
 
 - name: Set pdf files to be opened with Okular
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default okularApplication_pdf.desktop application/pdf"
   changed_when: False
 
 # ???? is it correct? test
 # xdg-mime query default application/epub+zip
 - name: Set epubs files to be opened with Okular
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default okularApplication_epup.desktop application/epub+zip"
   changed_when: False
 
 - name: Set Markdown (md) files to be opened with Ghostwriter
+  become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default ghostwriter.desktop text/markdown"
   changed_when: False
 #- name: Set Markdown (md) files to be opened with ReText
+#  become_user: "{{ username_of_a_local_user }}"
 #  command: "xdg-mime default me.mitya57.ReText.desktop text/markdown"
 #  changed_when: False
 
