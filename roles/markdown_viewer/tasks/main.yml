@@ -6,3 +6,8 @@
   pip:
     name: ReText
     extra_args: --user
+- name: Install GhostWriter
+  apt:
+   name:
+     - ghostwriter
+   force_apt_get: yes
