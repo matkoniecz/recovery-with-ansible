@@ -1,4 +1,4 @@
-# Linux
+ # Linux
 
 ```
 sudo apt-get remove firefox -y
