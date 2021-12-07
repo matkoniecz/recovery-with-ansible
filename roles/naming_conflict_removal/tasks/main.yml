@@ -1,5 +1,5 @@
 ---
-- name: unneded, conflicts with krusader
+- name: unneeded, conflicts with krusader
   apt:
     name:
       - krename

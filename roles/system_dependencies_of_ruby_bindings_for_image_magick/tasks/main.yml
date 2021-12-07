@@ -1,5 +1,5 @@
 ---
-- name: Install system dependecies of Ruby bindings for ImageMagick ("rmagick")
+- name: Install system dependencies of Ruby bindings for ImageMagick ("rmagick")
   apt:
    name:
      - imagemagick

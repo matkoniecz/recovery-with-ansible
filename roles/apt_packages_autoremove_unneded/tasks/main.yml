@@ -1,5 +1,5 @@
 ---
-- name: Autoremove unneded apt packages
+- name: Autoremove unneeded apt packages
   apt:
    autoremove: yes
    force_apt_get: yes

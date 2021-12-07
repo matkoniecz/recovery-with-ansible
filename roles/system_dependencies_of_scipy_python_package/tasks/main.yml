@@ -1,5 +1,5 @@
 ---
-- name: Install system dependecies of scipy python package
+- name: Install system dependencies of scipy python package
   apt:
    name:
      - gfortran
