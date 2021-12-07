@@ -76,6 +76,11 @@
   command: "xdg-mime default codium.desktop application/xml"
   changed_when: False
 
+- name: Set JS files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop application/javascript"
+  changed_when: False
+
 - name: Really set XML files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/xml"
