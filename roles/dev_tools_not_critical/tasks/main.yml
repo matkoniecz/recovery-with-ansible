@@ -21,8 +21,7 @@
       # change partitions etc
      - gparted
 
-     # disk usage display
-     - baobab
+     - baobab # disk usage display, disk use detector, free space
 
      # temperature graph - https://askubuntu.com/a/628124/349903
      - psensor
