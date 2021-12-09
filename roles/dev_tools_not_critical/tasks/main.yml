@@ -41,4 +41,6 @@
      # encoding tool
      - enca
 
+     - pngcrush
+
    force_apt_get: yes
