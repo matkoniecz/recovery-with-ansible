@@ -122,12 +122,16 @@ Start -> Settings -> Lock screen -> disable windows spotlight
 
 windows decrappifiers
 
-https://github.com/geekygirlsarah/remove_win10_apps/blob/master/Uninstall_Win10_Apps.ps1
-https://github.com/erkserkserks/windows-10-decrapifier
-https://gist.github.com/gvlx/b4d4c5681900ca965276fc5c16fe8520
-https://gist.github.com/nicelife90/26de9fee18a2ea22278d1507d0cb2b13 
-https://www.hybrid-365.com/powershell/how-to-change-default-apps-in-windows-10-using-powershell/
+https://community.spiceworks.com/user-groups/windows-decrapifier-group
 
+contains 
+
+```
+#News/Feeds taskbar item
+Reg Add "$reglocation\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds" /T REG_DWORD /V "ShellFeedsTaskbarViewMode" /D 2 /F
+```
+
+disablings news/feeds
 
 ## Configure Windows host so it can listen to Ansible commands
 
