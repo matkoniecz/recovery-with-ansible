@@ -1,19 +1,36 @@
-# decent text editor that works well out of the box
-# without endless configurations
-# must have syntax code higligting
-# preferably showing automated docs info for libraries (in Python, Ruby etc)
-# gedit is worse than sublime text
-# sublime text requires manual configuration to work well
-# https://www.sublimetext.com/docs/3/linux_repositories.html
-# kate fails on long lines
-# - https://bugs.kde.org/show_bug.cgi?id=387910
-# - https://stackoverflow.com/questions/13496654/kate-text-editor-cannot-handle-lines-longer-than-1024
-# kate is also not showing line numbers by default (!)
-# - https://superuser.com/q/918189/376651
-# geany geany-plugin-addons - it is really flustrating
-# featherpad is losing state on OS/program crash
+# CURRENT SELECTION:
 # visual studio code works OK but...
 # codium is the same, without telemetry and similar unwanted stuff
+
+# for quick editing
+# geany geany-plugin-addons
+
+# CRITERIA:
+# decent text editor that works well out of the box
+# - without endless configurations
+# - sane defaults
+# - but allow configuration
+# - must have syntax code higligting
+#  - ability yo show whitespace (tabs vs spaces) is mandatory
+# - preferably showing automated docs info for libraries (in Python, Ruby etc)
+# - preferably smart tabs - use tabs/spaces depending on how file is formatted
+# - no telemetry
+#  - at this point believing that only private and limited data will be used
+#    would be silly. This is sad as reasonable telemetry would help everyone.
+
+# REJECTED EDITORS:
+# sublime text requires manual configuration to work well
+# - https://www.sublimetext.com/docs/3/linux_repositories.html
+# gedit is worse than sublime text
+# featherpad is
+# - without option to distinguish spaces and tabs
+# - and using tabs when editing Python files with spaces for intends
+# - losing state on OS/program crash
+# - not showing line numbers by default
+# kate
+# - fails on extremely long lines
+#   - https://stackoverflow.com/a/70590302/4130619 (but that was Kate 19.12.3 from 2019, in 2022 it was what Ubuntu package included)
+# - not showing line numbers by default ( https://superuser.com/q/918189/376651 )
 
 
 # https://docs.ansible.com/ansible/latest/modules/apt_key_module.html
