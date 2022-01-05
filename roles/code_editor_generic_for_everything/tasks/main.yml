@@ -11,7 +11,7 @@
 # - sane defaults
 # - but allow configuration
 # - must have syntax code higligting
-#  - ability yo show whitespace (tabs vs spaces) is mandatory
+#  - ability to show whitespace (tabs vs spaces) is mandatory
 # - preferably showing automated docs info for libraries (in Python, Ruby etc)
 # - preferably smart tabs - use tabs/spaces depending on how file is formatted
 # - no telemetry
@@ -22,12 +22,12 @@
 # sublime text requires manual configuration to work well
 # - https://www.sublimetext.com/docs/3/linux_repositories.html
 # gedit is worse than sublime text
-# featherpad is
+# featherpad is unfriendly as a code editor
 # - option to distinguish spaces and tabs is deeply buried
 #   - Option -> Preferences -> Text -> Show whitespaces
-# - and using tabs when editing Python files with spaces for intends
-# - losing state on OS/program crash
+# - and it is using tabs when editing Python files with spaces for intends
 # - not showing line numbers by default
+# - losing state on OS/program crash
 # kate
 # - fails on extremely long lines
 #   - https://stackoverflow.com/a/70590302/4130619 (but that was Kate 19.12.3 from 2019, in 2022 it was what Ubuntu package included)
