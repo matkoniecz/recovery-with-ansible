@@ -23,7 +23,8 @@
 # - https://www.sublimetext.com/docs/3/linux_repositories.html
 # gedit is worse than sublime text
 # featherpad is
-# - without option to distinguish spaces and tabs
+# - option to distinguish spaces and tabs is deeply buried
+#   - Option -> Preferences -> Text -> Show whitespaces
 # - and using tabs when editing Python files with spaces for intends
 # - losing state on OS/program crash
 # - not showing line numbers by default
