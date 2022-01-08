@@ -1,7 +1,6 @@
----
-- name: Install pinta as paint equivalent
-  apt:
-   name:
-    # kolourpaint4 #crashes on save as of autumn 2017
-     - pinta
-   force_apt_get: yes
+# apt: kolourpaint4 #crashes on save as of autumn 2017
+# apt: pinta #freezes on text field edit as of early 2021, 2015 version
+- name: Install the pinta flatpak (paint equivalent)
+  community.general.flatpak:
+    name: https://dl.flathub.org/repo/appstream/com.github.PintaProject.Pinta.flatpakref
+    state: present
