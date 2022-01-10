@@ -91,6 +91,11 @@
   command: "xdg-mime default codium.desktop text/x-csrc"
   changed_when: False
 
+- name: Set LaTeX files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop text/x-tex"
+  changed_when: False
+
 - name: Set pdf files to be opened with Okular
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default okularApplication_pdf.desktop application/pdf"
