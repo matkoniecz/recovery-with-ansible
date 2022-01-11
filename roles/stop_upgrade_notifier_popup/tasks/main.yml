@@ -1,5 +1,10 @@
+# seriously, who thought that putting the worst part of windows into Linux is a good idea?
+# if it would be reserved to secrity updates and popup would be clear abot this
+# it could be defencible. But modal popup distracting from the current work?
+# Just because some of thousands packages I have on my computer released some
+# update? Seriously? Why? Why?
 ---
-- name: Prevet autostart of obnoxious popup notifier
+- name: Prevent autostart of an obnoxious demonic popup notifier - this one with "Upgrade Notifier"
   file:
     path: /etc/xdg/autostart/upg-notifier-autostart.desktop
     state: absent
