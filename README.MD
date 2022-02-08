@@ -63,6 +63,7 @@ choco install vscodium -y
 choco install inkscape -y
 choco install gimp -y
 choco install telegram -y
+choco install python -y
 
 clean C:\Users\mateusz\AppData\Local\Temp\chocolatey ( [cache cleanup is in premium version, wtf](https://github.com/chocolatey/choco/issues/1124#issuecomment-352315426) )
 
