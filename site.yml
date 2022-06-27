@@ -32,10 +32,18 @@
     - ruby # required by legacy install scripts
     - python # required by commitment device scripts
     - dev_tools_basic
-    - backup_restore_gem
-    - backup_gem
     - code_editor_generic_for_everything # listing of tried editors is there
     - stop_upgrade_notifier_popup
+    - ripgrep
+
+- name: basic_on_the_main_computer
+  hosts: all
+  vars:
+    - username_of_a_local_user: mateusz
+  become: yes
+  roles:
+    - backup_restore_gem
+    - backup_gem
     - cron_dependencies # to avoid spurious notifications about failed cron jobs
 
 - name: my_software
@@ -76,14 +84,12 @@
     - set_default_programs_for_file_types
     - borg_backup
     - install_readable_documentation
-    - ripgrep
 - name: low_priority_changes
   hosts: all
   vars:
     - username_of_a_local_user: mateusz
   become: yes
   roles:
-    - bloat_removal
     - no_snap_telegram # if really wanted: flatpak or straight binary install
     - naming_conflict_removal
     - spellcheck_dictionaries
@@ -104,5 +110,6 @@
     - username_of_a_local_user: mateusz
   become: yes
   roles:
+    - bloat_removal
     - apt_packages_autoremove_unneded
     - apt_packages_upgrade
