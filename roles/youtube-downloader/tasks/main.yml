@@ -1,9 +1,9 @@
 # https://docs.ansible.com/ansible/latest/modules/pip_module.html
 ---
-- name: Install youtube-dl
+- name: Install yt-dlp
   become: yes
   become_user: "{{ username_of_a_local_user }}"
   pip:
-    name: youtube-dl
+    name: yt-dlp
     extra_args: --user
     state: latest

@@ -65,7 +65,7 @@
     - password_manager # keepass
     - java
     - prepare_system_for_josm
-    - youtube-dl
+    - youtube-downloader
     - checker_what_opens_a_given_file
     - map_carver_dependencies
     - printer_driver_support
