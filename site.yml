@@ -35,6 +35,7 @@
     - code_editor_generic_for_everything # listing of tried editors is there
     - stop_upgrade_notifier_popup
     - ripgrep
+    - set_default_programs_for_file_types
 
 - name: basic_on_the_main_computer
   hosts: all
