@@ -1,0 +1,6 @@
+---
+- name: Install PDF editor allowing to add images - see https://askubuntu.com/questions/87419/how-can-i-add-text-and-images-for-example-a-signature-to-a-pdf https://askubuntu.com/questions/167274/how-can-i-edit-a-picture-into-an-existing-pdf-file https://itsfoss.com/pdf-editors-linux/
+  apt:
+   name:
+     - xournal # replace with https://github.com/xournalpp/xournalpp if needed
+   force_apt_get: yes
