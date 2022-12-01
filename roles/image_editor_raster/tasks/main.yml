@@ -1,0 +1,12 @@
+---
+- name: Install Gimp
+  apt:
+   name:
+     - gimp
+   force_apt_get: yes
+- name: Install Krita
+  apt:
+   name:
+     - krita
+   force_apt_get: yes
+# there is also Photopea

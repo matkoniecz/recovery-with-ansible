@@ -59,7 +59,7 @@
     #- telegram
     - kotlin
     - screencast_screen_capture
-    - gimp
+    - image_editor_raster
     - inkscape
     - dev_tools_not_critical
     - mail_client

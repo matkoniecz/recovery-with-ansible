@@ -1,6 +1,0 @@
----
-- name: Install Gimp
-  apt:
-   name:
-     - gimp
-   force_apt_get: yes
