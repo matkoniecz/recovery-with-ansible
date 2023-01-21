@@ -13,8 +13,10 @@
      - libstdc++6:i386
      - libbz2-1.0:i386
    force_apt_get: yes
-- name: Install Android Studio
-  snap:
-    name:
-      - android-studio
-    classic: yes
+# broken, see https://askubuntu.com/questions/1451187/how-can-i-install-android-studio-as-a-package
+# see also https://github.com/snapcrafters/android-studio/issues/103 requesting better Snap
+#- name: Install Android Studio
+#  snap:
+#    name:
+#      - android-studio
+#    classic: yes
