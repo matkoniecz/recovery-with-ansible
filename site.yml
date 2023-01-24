@@ -77,7 +77,11 @@
     - prepare_system_for_josm
     - youtube-downloader
     - checker_what_opens_a_given_file
-    - map_carver_dependencies
+    #- map_carver_dependencies # borked by npm so disabled for now
+    # The error was: json.decoder.JSONDecodeError
+    # it appears to be failing with something fixed in https://github.com/ansible-collections/community.general/pull/1625
+    # broken in Ansible 2.9.6
+    # ansible --version
     - printer_driver_support
     - music_player_with_automatic_ratings
     # k3b # good for cd ripping, but buggy, during burning it managed to destroy multiple CDs
