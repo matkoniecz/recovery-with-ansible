@@ -1,4 +1,40 @@
 ---
+- name: remove startup bloat - get rid of not needed apt-daily.service slowing down startup
+ # systemd-analyze blame
+ # systemd-analyze critical-chain
+ # https://askubuntu.com/a/763070/349903 mentions a visualisation tool
+ # This service was sitting on critical chain, delaying startup by multiple seconds
+ # Just to be able to show annoying popups I disabled anyway
+ # also, it can be put into cron if I really need it
+  ansible.builtin.systemd:
+    # sudo systemctl disable apt-daily.service --now
+    name: apt-daily.service
+    enabled: no
+- name: remove startup bloat - get rid of not needed NetworkManager-wait-online.service slowing down startup
+ # yes, really. It was delaying startup by 6 seconds (doubling it!) by waiting for connection.
+ # why?
+ # see logs in https://gist.github.com/matkoniecz/27031a4918944cb556e1742930e6d927
+  ansible.builtin.systemd:
+    # sudo systemctl disable NetworkManager-wait-online.service
+    name: NetworkManager-wait-online.service
+    enabled: no
+# according to Lubuntu chat a misconfiguration in default systemd settings is Ubuntu bug
+# I asked about following:
+# Lubuntu, by default, waits with boot until network connection succeeds or fails which is quite pointless and noticeably increases boot time.
+# See https://gist.github.com/matkoniecz/27031a4918944cb556e1742930e6d927 (12s->6s for time measured by systemd-analyze critical-chain)
+#
+# response:
+#
+# (irc) <guiverc> @matkoniecz, systemd is Ubuntu maintained (part of base system), not Lubuntu specific.
+# (irc) <Maik> in that case he has to report it at ubuntu's end on Launchpad
+#
+# though given ads in apt-get I probably should not waste my time on that...
+# https://bugs.launchpad.net/ubuntu/+source/ubuntu-advantage-tools/+bug/1992026
+
+# see https://askubuntu.com/questions/1451560/ubuntu-20-04-how-can-i-stop-waiting-for-networkmanager-service-during-startup
+# for attempt to fix next issue
+
+
 - name: remove raspbian bloat
   apt:
     name: "{{ packages }}"
