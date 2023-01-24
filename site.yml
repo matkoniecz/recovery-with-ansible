@@ -95,7 +95,9 @@
     - username_of_a_local_user: mateusz
   become: yes
   roles:
-    - no_snap_telegram # if really wanted: flatpak or straight binary install
+    #- no_snap_telegram # if really wanted: flatpak or straight binary install
+    # Telegram is broken, see https://github.com/telegramdesktop/tdesktop/issues/16153
+    # and https://github.com/telegramdesktop/tdesktop/issues/25733
     - naming_conflict_removal
     - spellcheck_dictionaries
     - virtualbox
