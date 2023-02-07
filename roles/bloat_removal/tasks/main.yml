@@ -3,6 +3,7 @@
  # systemd-analyze blame
  # systemd-analyze critical-chain
  # https://askubuntu.com/a/763070/349903 mentions a visualisation tool
+ # https://docs.ansible.com/ansible/latest/collections/ansible/builtin/systemd_module.html has ansible specific documentation
  # This service was sitting on critical chain, delaying startup by multiple seconds
  # Just to be able to show annoying popups I disabled anyway
  # also, it can be put into cron if I really need it
