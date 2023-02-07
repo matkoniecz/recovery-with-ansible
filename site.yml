@@ -56,7 +56,6 @@
     - program_to_select_monitor_or_monitors_displaying_screen
     - newline_tools
     - android-studio
-    #- telegram
     - kotlin
     - screencast_screen_capture
     - image_editor_raster
@@ -95,9 +94,6 @@
     - username_of_a_local_user: mateusz
   become: yes
   roles:
-    #- no_snap_telegram # if really wanted: flatpak or straight binary install
-    # Telegram is broken, see https://github.com/telegramdesktop/tdesktop/issues/16153
-    # and https://github.com/telegramdesktop/tdesktop/issues/25733
     - naming_conflict_removal
     - spellcheck_dictionaries
     - virtualbox

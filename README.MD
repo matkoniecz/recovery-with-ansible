@@ -62,7 +62,6 @@ choco install androidstudio -y
 choco install vscodium -y
 choco install inkscape -y
 choco install gimp -y
-choco install telegram -y
 choco install python -y
 
 clean C:\Users\mateusz\AppData\Local\Temp\chocolatey ( [cache cleanup is in premium version, wtf](https://github.com/chocolatey/choco/issues/1124#issuecomment-352315426) )
@@ -245,8 +244,6 @@ https://docs.ansible.com/ansible/latest/user_guide/windows_faq.html#can-ansible-
 https://www.how2shout.com/how-to/how-to-install-ansible-on-windows-10.html 
 
 https://docs.microsoft.com/en-us/windows/wsl/
-
-see Telegram discussion
 
 https://stackoverflow.com/questions/58345011/setup-windows-10-workstation-using-ansible-installed-on-wsl
 
