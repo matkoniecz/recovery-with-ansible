@@ -35,6 +35,20 @@
 # see https://askubuntu.com/questions/1451560/ubuntu-20-04-how-can-i-stop-waiting-for-networkmanager-service-during-startup
 # for attempt to fix next issue
 
+- name: remove startup bloat - get rid of indexer that was a CPU hog directly on startup
+# I am not using its results, as far as I know
+# even if I would be, then why it takes ENTIRE processor directly after startup?
+# manages to make browser startup torturously slow
+# found culprit using top command
+# https://unix.stackexchange.com/questions/704220/what-is-tracker-miner-f-and-how-to-stop-it
+# https://askubuntu.com/questions/876304/how-to-uninstall-all-trackers-tracker-miner-fs-apps
+  apt:
+    name: "{{ packages }}"
+    state: absent
+    force_apt_get: yes
+  vars:
+    packages:
+      - tracker-extract
 
 - name: remove raspbian bloat
   apt:
