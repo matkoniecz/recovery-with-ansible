@@ -1,0 +1,6 @@
+---
+- name: Install music editor, especially crop ability with quick preview is nice
+  apt:
+   name:
+     - audacity
+   force_apt_get: yes
