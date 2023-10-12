@@ -1,8 +1,15 @@
 ---
 - name: Install shutter
-  snap:
-    name:
-      - shutter
+  apt:
+   name:
+     - screengrab
+   force_apt_get: yes
+    # TODO: revisit shutter availability, it got resurrected
+    # https://shutter-project.org/downloads/third-party-packages/
+
+    #snap:
+    #name:
+    #  - shutter
     # prtscrn
     # install_package("flameshot")
     # shutter was great but appears to be deprecated in Lubuntu 19
