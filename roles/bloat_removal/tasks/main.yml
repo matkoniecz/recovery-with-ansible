@@ -147,3 +147,11 @@
     state: absent
     purge: yes
     force_apt_get: yes
+# https://bugs.launchpad.net/ubuntu/+source/ubuntu-advantage-tools/+bug/1992026
+- name: remove ads from system commands
+  apt:
+    name:
+      - ubuntu-advantage-tools
+    state: absent
+    purge: yes
+    force_apt_get: yes
