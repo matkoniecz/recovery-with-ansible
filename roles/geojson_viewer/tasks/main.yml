@@ -1,0 +1,7 @@
+---
+- name: Install Gnome Maps and QGIS
+  apt:
+   name:
+     - gnome-maps # lighweight viewer, QGIS for more advanced things
+     - qgis
+   force_apt_get: yes

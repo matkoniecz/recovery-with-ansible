@@ -89,6 +89,7 @@
     - borg_backup
     - music_editor
     - install_readable_documentation
+    - geojson_viewer
 - name: low_priority_changes
   hosts: all
   vars:
