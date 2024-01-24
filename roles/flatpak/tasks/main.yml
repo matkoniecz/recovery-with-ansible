@@ -7,7 +7,8 @@
 - name: Install Flatpak support in Ansible (Install community.general collection)
   # https://docs.ansible.com/ansible/latest/collections/community/general/flatpak_module.html
   command: ansible-galaxy collection install community.general
-  changed_when: True
+  register: install_general
+  changed_when: '"Nothing to do." not in install_general.stdout'
 
 #https://stackoverflow.com/questions/77871583/how-can-i-install-community-general-collection-in-ansible-using-ansible-with-t
 #How can I install community.general collection in Ansible, using Ansible? With task run only when it is missing?
