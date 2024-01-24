@@ -1,6 +1,32 @@
 ---
 - name: Install epub reader
-  apt:
-   name:
-     - fbreader
-   force_apt_get: yes
+  community.general.flatpak:
+    name:  com.github.johnfactotum.Foliate
+    state: present
+#  apt:
+#   name:
+#   force_apt_get: yes
+     #- fbreader # https://new.fbreader.org/ not open source, inverts if into fi in display. And lf into fl. And has broken search.
+     #- calibre # some megalibrary management - I want rather reader, has animated donation request in main menu
+     # okular has ugly default font as of 2024 on Ubuntu 20 LTS
+     # Lucidor - Red Army star as a logo, fuck away with that. What they use for another project? Swastika?
+     # (I heard some info that it is rather satanic, what is a bit better but still do not want red star logo
+     # on anything I operate or use - also, not happy about satanism either)
+     # https://babluboy.github.io/bookworm/ - broken install for Ubuntu - https://github.com/babluboy/bookworm/issues/325 (also, seems Calibre duplicate)
+
+     # https://johnfactotum.github.io/foliate/
+     # flatpak install flathub com.github.johnfactotum.Foliate
+     # flatpak run com.github.johnfactotum.Foliate
+     # nicely working search
+     #
+     # https://www.linuxcapable.com/how-to-install-foliate-on-ubuntu-linux/
+
+     # potential
+     # https://github.com/linuxmint/xreader/
+     # pandoc to html
+     # https://github.com/buggins/coolreader
+     # https://wiki.gnome.org/Apps/Books
+     # https://www.omglinux.com/arianna-ebook-reader-for-linux-qt/
+     # https://github.com/michaldaniel/Ebook-Viewer (abandoned)
+     # https://github.com/oguzhaninan/Buka (abandoned)
+     # https://www.edrlab.org/software/thorium-reader/ (is it open source?)
