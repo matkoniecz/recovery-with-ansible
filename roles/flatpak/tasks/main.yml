@@ -4,3 +4,25 @@
    name:
      - flatpak
    force_apt_get: yes
+- name: Install Flatpak support in Ansible (Install community.general collection)
+  # https://docs.ansible.com/ansible/latest/collections/community/general/flatpak_module.html
+  command: ansible-galaxy collection install community.general
+  changed_when: True
+
+#https://stackoverflow.com/questions/77871583/how-can-i-install-community-general-collection-in-ansible-using-ansible-with-t
+#How can I install community.general collection in Ansible, using Ansible? With task run only when it is missing?
+#
+#Right now I have
+#
+#```
+#---
+#- name: Install community.general collection
+#  command: ansible-galaxy collection install community.general
+#  changed_when: True
+#```
+#
+#which works, but will report that something was changed on every run (`changed_when: False` has opposite problem) and I suspect #that error handling will be poor.
+#
+#tags:
+#ansible
+#ansible-collections
