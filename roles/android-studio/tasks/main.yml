@@ -21,3 +21,10 @@
 #    name:
 #      - android-studio
 #    classic: yes
+#
+#
+# cd ~/Documents/install
+# https://developer.android.com/studio/preview?utm_source=android-studio
+# mv android-studio android-studio-old
+# rozpakować
+# skasować archiwum
