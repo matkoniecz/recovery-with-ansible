@@ -1,12 +1,18 @@
 # installing
 # nodejs
 # apt package without adding special repos was not working well
+# (what exactly went wrong?)
 # and this code is not tested on a fresh system
 
-# official version is at
+# some version is at
 # https://github.com/nodesource/ansible-nodejs-role/blob/master/tasks/main.yml
+# but it is abandoned, see https://github.com/nodesource/ansible-nodejs-role/issues/46
 
-# use it if simplified one below from HSKRK breaks
+# see also https://deb.nodesource.com/
+# see also https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions
+
+# https://duckduckgo.com/?t=ffab&q=what+is+the+proper+way+to+install+npm+using+ansible%3F&ia=web
+# should be starting point I guess...
 
 - name: Add apt key for node
   apt_key:
