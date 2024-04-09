@@ -8,4 +8,5 @@
       - pillow
       - numpy
       - matplotlib
+      - autopep8
     extra_args: --user
