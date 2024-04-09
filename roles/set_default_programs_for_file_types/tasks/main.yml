@@ -7,6 +7,9 @@
 # see https://askubuntu.com/questions/844864/why-the-difference-between-the-results-with-file-mime-type-and-xdg-mime-que
 # for description of differences
 
+# common values listed at 
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+
 # in cases where this failed (text/plain gets returned):
 # cat ~/.config/mimeapps.list
 # change in GUI
@@ -56,6 +59,31 @@
   command: "xdg-mime default codium.desktop text/plain"
   changed_when: False
 
+- name: Set log files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop text/x-log"
+  changed_when: False
+
+- name: Set css files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop text/css"
+  changed_when: False
+
+- name: Set json files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop application/json"
+  changed_when: False
+
+- name: Set html files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop text/html"
+  changed_when: False
+
+- name: Set csv files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop text/csv"
+  changed_when: False
+
 - name: Set files with shell scripts to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop application/x-shellscript"
@@ -79,6 +107,11 @@
 - name: Set JS files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop application/javascript"
+  changed_when: False
+
+- name: Set JS module files to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop text/javascript"
   changed_when: False
 
 - name: Really set XML files to be opened with Codium
