@@ -54,6 +54,11 @@
      - mlocate
    force_apt_get: yes
 
+- name: Set html files to be opened with Firefox Web Browser
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default firefox.desktop text/html"
+  changed_when: False
+
 - name: Set plain text files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/plain"
@@ -72,11 +77,6 @@
 - name: Set json files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop application/json"
-  changed_when: False
-
-- name: Set html files to be opened with Codium
-  become_user: "{{ username_of_a_local_user }}"
-  command: "xdg-mime default codium.desktop text/html"
   changed_when: False
 
 - name: Set csv files to be opened with Codium
