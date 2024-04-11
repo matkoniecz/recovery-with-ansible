@@ -139,11 +139,10 @@
   command: "xdg-mime default okularApplication_pdf.desktop application/pdf"
   changed_when: False
 
-# ???? is it correct? test
 # xdg-mime query default application/epub+zip
 - name: Set epubs files to be opened with Okular
   become_user: "{{ username_of_a_local_user }}"
-  command: "xdg-mime default okularApplication_epup.desktop application/epub+zip"
+  command: "xdg-mime default com.github.johnfactotum.Foliate.desktop application/epub+zip"
   changed_when: False
 
 - name: Set Markdown (md) files to be opened with Ghostwriter
