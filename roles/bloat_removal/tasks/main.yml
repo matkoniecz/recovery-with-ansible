@@ -150,6 +150,7 @@
 # https://bugs.launchpad.net/ubuntu/+source/ubuntu-advantage-tools/+bug/1992026
 # https://bugs.launchpad.net/ubuntu/+source/ubuntu-meta/+bug/1930914
 # https://github.com/Skyedra/UnspamifyUbuntu
+# https://askubuntu.com/questions/1507236/how-can-i-remove-spam-ad-about-some-kubernetes-service-likely-in-motd-in-ubunt
 - name: remove ads from system commands (Ubuntu is now an adware)
   apt:
     name:
