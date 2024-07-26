@@ -135,6 +135,7 @@
       - light-locker # disable screen locking
       - ghostscript # launched by gs (conflicts with misspelled alias for git status)
       - gpicview # deletes without using trash
+      - gv # low quality pdf viewer that never ever managed to open any file I have seen, claws mail tries to use it
     state: absent
     force_apt_get: yes
 - name: purge zeitgeist for disturbing backup diffs and being creepy and having no known use
