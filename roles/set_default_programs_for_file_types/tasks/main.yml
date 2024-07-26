@@ -140,7 +140,7 @@
   changed_when: False
 
 # xdg-mime query default application/epub+zip
-- name: Set epubs files to be opened with Okular
+- name: Set epubs files to be opened with Foliate
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default com.github.johnfactotum.Foliate.desktop application/epub+zip"
   changed_when: False
