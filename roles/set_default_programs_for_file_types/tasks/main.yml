@@ -136,7 +136,8 @@
 
 - name: Set pdf files to be opened with Okular
   become_user: "{{ username_of_a_local_user }}"
-  command: "xdg-mime default okularApplication_pdf.desktop application/pdf"
+  #command: "xdg-mime default okularApplication_pdf.desktop application/pdf"
+  command: "xdg-mime default org.kde.okular.desktop application/pdf"
   changed_when: False
 
 # xdg-mime query default application/epub+zip
