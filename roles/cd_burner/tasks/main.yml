@@ -1,8 +1,0 @@
----
-- name: Install CD burner
-  apt:
-   name:
-      # cd burning alernative, without kde issues (my 16.04 install was unable to run kde programs without fiddling)
-      # brasero
-     - xfburn
-   force_apt_get: yes
