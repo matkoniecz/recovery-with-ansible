@@ -20,7 +20,6 @@
     - username_of_a_local_user: mateusz
   roles:
     - ansible
-    - select_fast_apt_mirror
 
 - name: basic
   hosts: all
