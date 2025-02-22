@@ -94,7 +94,6 @@
     - username_of_a_local_user: mateusz
   become: yes
   roles:
-    - naming_conflict_removal
     - spellcheck_dictionaries
     - virtualbox
     - midi_audio_files_player
