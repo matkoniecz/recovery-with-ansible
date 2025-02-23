@@ -1,11 +1,9 @@
 # https://github.com/retext-project/retext#welcome-to-retext
 ---
 - name: Install ReText
-  become: yes # needed iff --user mode is used
-  become_user: "{{ username_of_a_local_user }}" # needed iff --user mode is used
-  pip:
+  become_user: "{{ username_of_a_local_user }}"
+  community.general.pipx:
     name: ReText
-    extra_args: --user
 # https://github.com/KDE/ghostwriter?tab=readme-ov-file#-ghostwriter
 - name: Install GhostWriter
   apt:

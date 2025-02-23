@@ -1,4 +1,4 @@
 ---
   dependencies:
-    - role: python # for retext, see https://github.com/retext-project/retext
+    - role: pipx # for retext, see https://github.com/retext-project/retext
     - role: python3-docutils # for retext, see https://github.com/retext-project/retext
