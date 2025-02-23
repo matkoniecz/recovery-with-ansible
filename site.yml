@@ -17,14 +17,14 @@
   hosts: all
   become: yes
   vars:
-    - username_of_a_local_user: mateusz
+    username_of_a_local_user: mateusz
   roles:
     - ansible
 
 - name: basic
   hosts: all
   vars:
-    - username_of_a_local_user: mateusz
+    username_of_a_local_user: mateusz
   become: yes
   roles:
     - git
@@ -39,7 +39,7 @@
 - name: basic_on_the_main_computer
   hosts: all
   vars:
-    - username_of_a_local_user: mateusz
+    username_of_a_local_user: mateusz
   become: yes
   roles:
     - backup_restore_gem
@@ -49,7 +49,7 @@
 - name: my_software
   hosts: all
   vars:
-    - username_of_a_local_user: mateusz
+    username_of_a_local_user: mateusz
   become: yes
   roles:
     - program_to_select_monitor_or_monitors_displaying_screen
@@ -91,7 +91,7 @@
 - name: low_priority_changes
   hosts: all
   vars:
-    - username_of_a_local_user: mateusz
+    username_of_a_local_user: mateusz
   become: yes
   roles:
     - spellcheck_dictionaries
@@ -109,7 +109,7 @@
 - name: final_cleanup
   hosts: all
   vars:
-    - username_of_a_local_user: mateusz
+    username_of_a_local_user: mateusz
   become: yes
   roles:
     - bloat_removal
