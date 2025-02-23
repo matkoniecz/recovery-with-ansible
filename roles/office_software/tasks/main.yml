@@ -6,3 +6,8 @@
    name:
      - libreoffice
    force_apt_get: yes
+- name: Install Polish dictionary for Libre Office
+  apt:
+    name:
+      - hunspell-pl
+    force_apt_get: yes
