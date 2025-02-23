@@ -1,0 +1,3 @@
+- name: Install yt-dlp
+  community.general.pipx:
+    name: yt-dlp

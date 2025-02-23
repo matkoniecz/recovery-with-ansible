@@ -1,0 +1,6 @@
+---
+- name: Install pipx
+  apt:
+   name:
+     - pipx
+   force_apt_get: yes
