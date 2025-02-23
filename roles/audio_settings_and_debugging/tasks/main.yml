@@ -1,0 +1,6 @@
+---
+- name: Install pavucontrol - for debugging audio, allows over 100% of loudness for specific applications
+  apt:
+   name:
+     - pavucontrol
+   force_apt_get: yes

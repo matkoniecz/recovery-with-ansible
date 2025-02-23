@@ -73,6 +73,7 @@
     - java
     - prepare_system_for_josm
     - youtube_downloader
+    - audio_settings_and_debugging
     - checker_what_opens_a_given_file
     - map_carver_dependencies # was borked by npm
                               # The error was: json.decoder.JSONDecodeError
