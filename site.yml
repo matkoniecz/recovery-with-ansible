@@ -52,6 +52,7 @@
     username_of_a_local_user: mateusz
   become: yes
   roles:
+    - mnemosyne
     - program_to_select_monitor_or_monitors_displaying_screen
     - newline_tools
     - android-studio

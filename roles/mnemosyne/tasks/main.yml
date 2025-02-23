@@ -1,0 +1,6 @@
+---
+- name: Install Mnemosyne
+  apt:
+   name:
+     - mnemosyne
+   force_apt_get: yes
