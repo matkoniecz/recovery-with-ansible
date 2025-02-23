@@ -100,7 +100,6 @@
     - midi_audio_files_player
     - python_package_uploading # uploading of python packages
     - pip_self_upgrade_pip
-    - core-pip-packages
     - per_project_gem_management
     - archive_unarchive_everything
     - system_dependencies_of_ruby_bindings_for_image_magick
