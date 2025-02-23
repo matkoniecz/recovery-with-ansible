@@ -9,7 +9,6 @@
      # As of 2021-11-14 they are available on Ubuntu 20.04, so listed them again but not sure is it
      # really necessary anymore
      - libc6:i386
-     - libncurses5:i386
      - libstdc++6:i386
      - libbz2-1.0:i386
    force_apt_get: yes
