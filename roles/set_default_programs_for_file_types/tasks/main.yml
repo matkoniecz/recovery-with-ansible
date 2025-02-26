@@ -155,3 +155,26 @@
 #  command: "xdg-mime default me.mitya57.ReText.desktop text/markdown"
 #  changed_when: False
 
+# xdg-mime query default image/png
+- name: Set .png image files to be opened with Image Viewer AKA Eye of Gnome
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default org.gnome.eog.desktop image/png"
+  changed_when: False
+
+# xdg-mime query default image/jpeg
+- name: Set .jpeg / .jpg image files to be opened with Image Viewer AKA Eye of Gnome
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default org.gnome.eog.desktop image/jpeg"
+  changed_when: False
+
+# xdg-mime query default image/gif
+- name: Set .gif image files to be opened with Image Viewer AKA Eye of Gnome
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default org.gnome.eog.desktop image/gif"
+  changed_when: False
+
+# xdg-mime query default image/bmp
+- name: Set .bmp image files to be opened with Image Viewer AKA Eye of Gnome
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default org.gnome.eog.desktop image/bmp"
+  changed_when: False
