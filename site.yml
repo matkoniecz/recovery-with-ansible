@@ -89,6 +89,7 @@
     - music_editor
     - install_readable_documentation
     - geojson_viewer
+    - ftp_client
 - name: low_priority_changes
   hosts: all
   vars:

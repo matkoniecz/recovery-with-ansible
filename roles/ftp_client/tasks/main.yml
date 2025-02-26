@@ -1,0 +1,6 @@
+---
+- name: Install Filezilla
+  apt:
+   name:
+     - filezilla
+   force_apt_get: yes
