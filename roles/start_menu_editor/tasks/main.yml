@@ -1,0 +1,6 @@
+---
+- name: Install start menu editor
+  apt:
+   name:
+     - menulibre
+   force_apt_get: yes

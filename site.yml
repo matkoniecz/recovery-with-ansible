@@ -53,6 +53,7 @@
   become: yes
   roles:
     - mnemosyne
+    - start_menu_editor
     - program_to_select_monitor_or_monitors_displaying_screen
     - newline_tools
     - android-studio
