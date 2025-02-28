@@ -1,0 +1,7 @@
+---
+- name: remove Chromium
+  apt:
+    name:
+      - chromium
+    state: absent
+    force_apt_get: yes
