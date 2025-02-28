@@ -1,10 +1,10 @@
 ---
-- name: Install keepass2
+- name: Install keepassxc
   apt:
    name:
-     - keepass2
+     - keepassxc
    force_apt_get: yes
-- name: Install xdotool required by keepass2 for autotype
+- name: Install xdotool required by keepass2 for autotype (TODO - is it needed in keepassxc)
   apt:
    name:
      - xdotool

@@ -1,5 +1,5 @@
 - name: Create symbolic link 
   file:
-    src: "/usr/bin/keepass2"
+    src: "/usr/bin/keepassxc"
     path: "/usr/bin/k"
     state: link
