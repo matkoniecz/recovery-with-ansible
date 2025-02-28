@@ -25,11 +25,6 @@
 # .desktop files should be in /usr/share/applications
 # https://askubuntu.com/questions/16580/where-are-file-associations-stored
 
-# cat /usr/share/applications/defaults.list
-# to see defaults (system ones?)
-# can be located with following command:
-# locate defaults.list
-
 # cat ~/.config/mimeapps.list
 # to user specific stuff, at least in Lubuntu 20.04
 
@@ -51,7 +46,6 @@
   apt:
    name:
      - xdg-utils
-     - mlocate
    force_apt_get: yes
 
 - name: Set html files to be opened with Firefox Web Browser
