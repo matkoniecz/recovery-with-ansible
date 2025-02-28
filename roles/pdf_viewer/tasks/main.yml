@@ -2,5 +2,12 @@
 - name: Install PDF viewer
   apt:
    name:
+#https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+#flatpak install flathub org.kde.okular
+# apt may have an ancient one
+# compare
+# https://launchpad.net/ubuntu/+source/okular
+# https://flathub.org/apps/org.kde.okular
      - okular # if different one would be used then set_default_programs_for_file_types also needs to be modified
    force_apt_get: yes
