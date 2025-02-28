@@ -10,3 +10,12 @@
    name:
      - ghostwriter
    force_apt_get: yes
+# https://apps.gnome.org/Apostrophe/
+# https://flathub.org/apps/org.gnome.gitlab.somas.Apostrophe
+# https://gitlab.gnome.org/World/apostrophe
+# available from APT - but in 2025 it was version from 2022
+# ysing flatpak would require new dependency in ../meta
+- name: Install apostrophe
+  community.general.flatpak:
+    name: https://dl.flathub.org/repo/appstream/org.gnome.gitlab.somas.Apostrophe.flatpakref
+    state: present
