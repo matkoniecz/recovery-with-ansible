@@ -8,3 +8,9 @@
   file:
     path: /etc/xdg/autostart/upg-notifier-autostart.desktop
     state: absent
+- name: remove lubuntu-update-notifier package
+  apt:
+    name:
+      - lubuntu-update-notifier # pointless annoying popups
+    state: absent
+    force_apt_get: yes
