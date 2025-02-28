@@ -1,5 +1,6 @@
 ---
 - name: Install Kotlin compiler
+  # see https://kotlinlang.org/docs/command-line.html#sdkman for a possible alternative
   snap:
     name:
       - kotlin

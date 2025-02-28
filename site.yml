@@ -56,7 +56,7 @@
     - program_to_select_monitor_or_monitors_displaying_screen
     - newline_tools
     - android-studio
-    - kotlin
+    #- kotlin # Snap version that is disabled right now (TODO)
     - screencast_screen_capture
     - image_editor_raster
     - inkscape
