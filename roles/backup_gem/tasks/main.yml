@@ -1,5 +1,10 @@
 # https://docs.ansible.com/ansible/latest/modules/gem_module.html
 ---
+- name: prevent 'package configuration for libcurl is not found'
+  apt:
+   name:
+     - libcurl4-openssl-dev
+   force_apt_get: yes
 - name: Install backup gem in version that works systemwide
   gem:
    name: backup
