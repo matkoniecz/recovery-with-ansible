@@ -53,21 +53,10 @@
     name: codium
     force_apt_get: yes
 
+# https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-debianubuntulinux-mint
+# should have an install instructions
+
 # note https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/36#note_395793123
-
-# this ansible code replaces following script
-# wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
-# echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | sudo tee --append /etc/apt/sources.list
-# sudo apt-get -qq update
-# sudo apt-get -qq install -y codium > /dev/null # in case of changing this - remember to modify git config
-
-# https://askubuntu.com/questions/616075/how-do-i-install-visual-studio-code/895790#895790
-# broken - later 
-# starts to complain about duplicated sources
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
-# sudo add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-# sudo apt-get -qq update
-# sudo apt -y install code
 
 # version with telemetry and other obvious malware purged - codium
 # https://github.com/VSCodium/vscodium
