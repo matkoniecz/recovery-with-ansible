@@ -1,9 +1,39 @@
 # CURRENT SELECTION:
-# visual studio code works OK but...
-# codium is the same, without telemetry and similar unwanted stuff
+# codium (like vscode, but without proprietrary parts)
 
+# https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
+
+---
 # for quick editing
 # geany geany-plugin-addons
+- name: "Install Geany, as stopgap until Codium can be manually installed"
+  apt:
+    name: codium
+    force_apt_get: yes
+# TODO! for now do this manually
+#- name: Add an Apt signing key, uses whichever key is at the URL
+#  apt_key:
+#    url: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+#    state: present
+#- name: "Add repo"
+#  apt_repository:
+#    repo: 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main'
+- name: "Install Codium"
+  apt:
+    name: codium
+    force_apt_get: yes
+
+# https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-debianubuntulinux-mint
+# should have an install instructions
+
+# note https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/36#note_395793123
+
+# version with telemetry and other obvious malware purged - codium
+# https://github.com/VSCodium/vscodium
+# package at https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
+
+
+
 
 # CRITERIA:
 # decent text editor that works well out of the box
@@ -32,32 +62,8 @@
 # - fails on extremely long lines
 #   - https://stackoverflow.com/a/70590302/4130619 (but that was Kate 19.12.3 from 2019, in 2022 it was what Ubuntu package included)
 # - not showing line numbers by default ( https://superuser.com/q/918189/376651 )
+# visual studio code
+# - includes nonfree parts
 
-
-# https://docs.ansible.com/ansible/latest/modules/apt_key_module.html
-# https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
-
-# seems broken - see https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/57
-# switch to snap cancer? Measure boot time in case of snap - https://github.com/VSCodium/vscodium#install-with-snap-gnulinux
-# switch to VSCode?
----
-- name: Add an Apt signing key, uses whichever key is at the URL
-  apt_key:
-    url: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
-    state: present
-- name: "Add repo"
-  apt_repository:
-    repo: 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main'
-- name: "Install codium"
-  apt:
-    name: codium
-    force_apt_get: yes
-
-# https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-debianubuntulinux-mint
-# should have an install instructions
-
-# note https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/36#note_395793123
-
-# version with telemetry and other obvious malware purged - codium
-# https://github.com/VSCodium/vscodium
-# package at https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
+# SELECTED
+# Codium (visual studio code without unfree parts)
