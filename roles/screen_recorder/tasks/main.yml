@@ -1,0 +1,6 @@
+---
+- name: Install screen recorder
+  apt:
+   name:
+     - simplescreenrecorder
+   force_apt_get: yes

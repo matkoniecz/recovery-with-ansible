@@ -91,6 +91,7 @@
     - install_readable_documentation
     - geojson_viewer
     - ftp_client
+    - screen_recorder
 - name: low_priority_changes
   hosts: all
   vars:
