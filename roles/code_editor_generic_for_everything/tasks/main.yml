@@ -26,6 +26,8 @@
 # https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo#how-to-install-for-debianubuntulinux-mint
 # should have an install instructions
 
+# See also https://github.com/VSCodium/vscodium/issues/2032#issuecomment-2589260055
+
 # note https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/36#note_395793123
 
 # version with telemetry and other obvious malware purged - codium
