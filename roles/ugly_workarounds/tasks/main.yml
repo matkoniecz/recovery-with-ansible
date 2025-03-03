@@ -1,0 +1,6 @@
+---
+- name: Install software needed for some kind of workaround, unclear why at this point
+  apt:
+   name:
+     - libk3b-extracodecs # was named libk3b6-extracodecs and later libk3b7-extracodecs
+   force_apt_get: yes
