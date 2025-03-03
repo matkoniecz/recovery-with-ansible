@@ -107,6 +107,7 @@
     - system_dependencies_of_scipy_python_package
     - pdf_generator_used_by_recipe_lister
     - flatpak
+    - trigger_notifications_popups
 - name: final_cleanup
   hosts: all
   vars:

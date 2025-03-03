@@ -1,0 +1,6 @@
+---
+- name: enables triggering system notifications from CLI with $ notify-send 'Everything computed!'
+  apt:
+   name:
+     - libnotify-bin
+   force_apt_get: yes
