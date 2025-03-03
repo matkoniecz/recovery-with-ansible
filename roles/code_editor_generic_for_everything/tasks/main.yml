@@ -69,12 +69,6 @@
 # sudo apt-get -qq update
 # sudo apt -y install code
 
-# snap - separate package manager, I prefer to avoid this
-#sudo apt-get -qq install snapd -y > /dev/null
-#sudo snap install code --classic > /dev/null
-# to upgrade:
-# sudo snap refresh code
-
 # version with telemetry and other obvious malware purged - codium
 # https://github.com/VSCodium/vscodium
 # package at https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
