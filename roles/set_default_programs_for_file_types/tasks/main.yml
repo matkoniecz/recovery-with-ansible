@@ -172,3 +172,9 @@
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default org.gnome.eog.desktop image/bmp"
   changed_when: False
+
+# xdg-mime query default image/webp
+- name: Set .webp image files to be opened with Image Viewer AKA Eye of Gnome
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default org.gnome.eog.desktop image/webp"
+  changed_when: False
