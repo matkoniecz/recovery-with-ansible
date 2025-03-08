@@ -136,3 +136,10 @@
     state: absent
     purge: yes
     force_apt_get: yes
+- name: remove ibus, which is useful for multilingual input but for me it just takes space in system tray
+  apt:
+    name:
+      - ibus
+    state: absent
+    purge: yes
+    force_apt_get: yes
