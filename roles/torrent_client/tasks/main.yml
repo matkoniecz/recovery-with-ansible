@@ -1,0 +1,6 @@
+---
+- name: Install torrent client for things like https://planet.osm.org/planet/changesets-latest.osm.bz2.torrent
+  apt:
+   name:
+     - aria2c
+   force_apt_get: yes
