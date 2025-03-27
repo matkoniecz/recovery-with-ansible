@@ -16,6 +16,8 @@
 
       # checker of disk health
       # S.M.A.R.T. monitoring tool
+      # https://gsmartcontrol.shaduri.dev/downloads
+      # NVME support is in but not in version distributed in some OS
      - gsmartcontrol
 
       # change partitions etc
