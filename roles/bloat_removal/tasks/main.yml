@@ -143,3 +143,13 @@
     state: absent
     purge: yes
     force_apt_get: yes
+# https://askubuntu.com/questions/926829/what-exactly-does-kactivitymanagerd-do-and-why-would-i-want-it-running
+# After this readme it still utterly unclear how it would be useful in any way. `activity might be "developing a KDE application", "studying 19th century art"` - OK, fine - and how other programs knowing this helps me at all? (for reference, I ended here because `kactivitymanage` was busy eating my power and heating my too-hot room by using 100% of one CPU cores - and I am curious what is the supposed benefit here...)
+- name: remove kactivitymanagerd that has no clear use
+  apt:
+    name:
+      - kactivities-bin
+      - kactivitymanagerd
+    state: absent
+    purge: yes
+    force_apt_get: yes
