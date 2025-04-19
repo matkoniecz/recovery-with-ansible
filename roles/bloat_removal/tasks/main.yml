@@ -144,7 +144,9 @@
     purge: yes
     force_apt_get: yes
 # https://askubuntu.com/questions/926829/what-exactly-does-kactivitymanagerd-do-and-why-would-i-want-it-running
-# After this readme it still utterly unclear how it would be useful in any way. `activity might be "developing a KDE application", "studying 19th century art"` - OK, fine - and how other programs knowing this helps me at all? (for reference, I ended here because `kactivitymanage` was busy eating my power and heating my too-hot room by using 100% of one CPU cores - and I am curious what is the supposed benefit here...)
+# After this readme it still utterly unclear how it would be useful in any way. `activity might be "developing a KDE application", "studying 19th century art"` - OK, fine - and how other programs knowing this helps me at all? Is this used in practice in any way at all by any software? If yes, how specifically any software adjust its behaviour based on data collected by kactivitymanage?
+# (for reference, I ended here because `kactivitymanage` was busy eating my power and heating my too-hot room by using 100% of one CPU cores - and I am curious what is the supposed benefit here...)
+# https://discuss.kde.org/t/what-is-the-point-of-kactivitymanagerd/33062 reply describes it as keeping "recently used files"
 - name: remove kactivitymanagerd that has no clear use
   apt:
     name:
