@@ -70,7 +70,7 @@
     - markdown_viewer
     - epub_reader
     - video_player
-    - password_manager # keepass
+    - password_manager
     - java
     - prepare_system_for_josm
     - youtube_downloader
