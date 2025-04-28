@@ -76,10 +76,8 @@
     - youtube_downloader
     - audio_settings_and_debugging
     - checker_what_opens_a_given_file
-    - map_carver_dependencies # was borked by npm
-                              # The error was: json.decoder.JSONDecodeError
-                              # fixed in https://github.com/ansible-collections/community.general/pull/1625
-                              # broken in Ansible 2.9.6, fixed in 2.12.10 (see ansible --version)
+    #- map_carver_dependencies # TASK [node : Add repository for node]
+    # fatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: E:The repository 'https://deb.nodesource.com/node_13.x noble Release' does not have a Release file., W:Updating from such a repository can't be done securely, and is therefore disabled by default., W:See apt-secure(8) manpage for repository creation and user configuration details., W:http://ppa.launchpad.net/git-core/ppa/ubuntu/dists/noble/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details., W:http://ppa.launchpad.net/inkscape.dev/stable/ubuntu/dists/noble/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details."} 
     - printer_driver_support
     - music_player_with_automatic_ratings
     - print_screen_capture_tool
