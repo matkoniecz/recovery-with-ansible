@@ -5,5 +5,8 @@
      - python3
      - python3-pip
      - python3-dev
-     - twine
    force_apt_get: yes
+- name: Install twine - using pipx as apt has old versions
+  become_user: "{{ username_of_a_local_user }}"
+  community.general.pipx:
+    name: twine
