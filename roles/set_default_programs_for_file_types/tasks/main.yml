@@ -58,6 +58,16 @@
   command: "xdg-mime default codium.desktop text/plain"
   changed_when: False
 
+- name: Set empty files files, presumed empty text files, to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop inode/x-empty"
+  changed_when: False
+
+- name: Set empty files files, presumed empty text files, to be opened with Codium
+  become_user: "{{ username_of_a_local_user }}"
+  command: "xdg-mime default codium.desktop application/x-zerosize"
+  changed_when: False
+
 - name: Set log files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop text/x-log"
