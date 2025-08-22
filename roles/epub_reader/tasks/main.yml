@@ -1,7 +1,7 @@
 ---
 - name: Install epub reader
   community.general.flatpak:
-    name:  com.github.johnfactotum.Foliate # TODO: try apt-get
+    name:  com.github.johnfactotum.Foliate
     state: present
 #  apt:
 #   name:
