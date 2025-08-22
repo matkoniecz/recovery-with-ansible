@@ -4,8 +4,3 @@
    name:
      - keepassxc
    force_apt_get: yes
-- name: Install xdotool required by keepass2 for autotype (TODO - is it needed in keepassxc)
-  apt:
-   name:
-     - xdotool
-   force_apt_get: yes
