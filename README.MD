@@ -5,7 +5,6 @@ sudo apt-get remove firefox -y
 sudo apt-get update
 sudo apt-get install git -y
 
-# TODO: merge it into ansible?
 # clone my private repo
 git clone https://gitlab.com/matkoniecz/boot_restore_script.git
 # clone my public dotfile repo
