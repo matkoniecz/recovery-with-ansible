@@ -83,7 +83,7 @@
 # this looks reasonable, the problem is that it is obeyed for any json, not only geojson
 # is it Lubuntu bug, QGIS bug or bug in something else?
 # for now I removed this entry manually
-# TODO: not helped, what else is needed?
+# TODO: not helped, what else is needed? restart?
 # see https://github.com/qgis/QGIS/issues/61215
 - name: Set json files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
