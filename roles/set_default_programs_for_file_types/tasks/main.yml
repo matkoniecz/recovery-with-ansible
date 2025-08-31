@@ -83,9 +83,9 @@
 # this looks reasonable, the problem is that it is obeyed for any json, not only geojson
 # is it Lubuntu bug, QGIS bug or bug in something else?
 # for now I removed this entry manually
-# TODO: not helped, what else is needed? restart?
+# not helped, what else is needed? restart?
 # see https://github.com/qgis/QGIS/issues/61215
-# see https://gis.stackexchange.com/questions/495130/how-can-i-stop-qgis-from-trying-to-open-all-json-files-and-failing-to-do-so
+# see https://gis.stackexchange.com/questions/495130/how-can-i-stop-qgis-from-trying-to-open-all-json-files-and-failing-to-do-so - worked, but with manual process
 # if that is problem on reinstall: ask on SE about CLI solution
 - name: Set json files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
