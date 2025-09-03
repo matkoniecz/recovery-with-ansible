@@ -87,6 +87,7 @@
 # see https://github.com/qgis/QGIS/issues/61215
 # see https://gis.stackexchange.com/questions/495130/how-can-i-stop-qgis-from-trying-to-open-all-json-files-and-failing-to-do-so - worked, but with manual process
 # if that is problem on reinstall: ask on SE about CLI solution
+# or ask on https://lists.osgeo.org/mailman/listinfo/qgis-user
 - name: Set json files to be opened with Codium
   become_user: "{{ username_of_a_local_user }}"
   command: "xdg-mime default codium.desktop application/json"
