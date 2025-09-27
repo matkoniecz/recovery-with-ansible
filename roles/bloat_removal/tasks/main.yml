@@ -156,9 +156,10 @@
     purge: yes
     force_apt_get: yes
 # https://bugs.launchpad.net/ubuntu/+source/evince/+bug/1798091 - looks like it was supposed to be fixed and come back again?
-# asked on https://app.element.io/#/room/#lubuntu-support:ubuntu.com (26th September 2025)
 # dmesg was overfilled with messages like
 # [12723.120643] audit: type=1400 audit(1744632066.305:319): apparmor="DENIED" operation="mknod" class="file" profile="/usr/bin/evince-thumbnailer" name="/home/mateusz/.cache/thumbnails/normal/d36288d1b9851998d95bd314e87a0657.png" pid=38550 comm="evince-thumbnai" requested_mask="c" denied_mask="c" fsuid=1000 ouid=1000
+# but I am not using evince anyway and from
+# https://en.wikipedia.org/wiki/Evince it looks like it is getting abandoned so lets not waste time on diagnosis
 - name: remove evince spamming dmesg
   apt:
     name:
